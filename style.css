@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #044e5a;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* nav.navbar a.nav-link {
+  justify-content: space-evenly;
+} */
+
+a.nav-link {
+  color: #111;
+  font-size: 18px;
+  gap: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+}
+a.nav-link:hover,
+a.nav-link.active {
+  color: orangered;
+}
+.logo {
+  height: 15%;
+  width: auto;
+}
+.logo span {
+  color: #00aeef;
+}
+.helpline {
+  background: linear-gradient(180deg, #035096 0%, #052669 100%);
+  color: white;
+  padding: 10px 15px 10px 15px;
+  border-radius: 10px 10px 10px 10px;
+  text-decoration: none;
+  text-align: center;
+}
+.helpline span {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+}
+.helpline:hover {
+  background: orangered;
+}
