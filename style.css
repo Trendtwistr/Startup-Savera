@@ -51,3 +51,11 @@ a.nav-link.active {
 .helpline:hover {
   background: orangered;
 }
+
+.footer {
+  background-color: #044e5a;
+  color: #fff;
+  padding: 10px;
+}
+
+
