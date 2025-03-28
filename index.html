@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap Demo</title>
+    <title>Bharat Edge - Business Solutions</title>
 
     <!-- Bootstrap CSS -->
     <link
@@ -24,11 +24,15 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-white fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img
@@ -52,9 +56,13 @@
         <div class="collapse navbar-collapse mx-auto" id="navbarNavDropdown">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Home</a
+              >
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About Us</a>
+            </li>
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -66,14 +74,22 @@
                 Services
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Partners</a></li>
-                <li><a class="dropdown-item" href="#">Featured</a></li>
+                <li><a class="dropdown-item" href="#">Aarambh</a></li>
+                <li><a class="dropdown-item" href="#">Kavach</a></li>
+                <li><a class="dropdown-item" href="#">Pramanit</a></li>
+                <li><a class="dropdown-item" href="#">Nidhi</a></li>
+                <li><a class="dropdown-item" href="#">Vikas</a></li>
+                <li><a class="dropdown-item" href="#">Vistar</a></li>
               </ul>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Partners</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Featured</a></li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="./partners.html">Partners</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./featured.html">Featured</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -84,238 +100,606 @@
     </nav>
 
     <!-- Hero Section -->
-    <div class="container">
-      <section id="hero">
-        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-          <h1 class="display-4 fw-normal text-body-emphasis">Pricing</h1>
-          <p class="fs-5 text-body-secondary">
-            Quickly build an effective pricing table for your potential
-            customers with this Bootstrap example. It’s built with default
-            Bootstrap components and utilities with little customization.
+    <section class="hero-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h1 class="hero-title">Hello! Founders</h1>
+            <p class="hero-subtitle">Our business is to grow your business</p>
+            <div class="hero-buttons">
+              <a href="#" class="btn btn-primary">Book Appointment</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <img
+              src="https://placehold.co/600x400/035096/ffffff/png?text=Business+Growth"
+              alt="Business Growth"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-section py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <img
+              src="https://placehold.co/600x400/035096/ffffff/png?text=Startup"
+              alt="Startup"
+              class="img-fluid rounded"
+            />
+          </div>
+          <div class="col-lg-6">
+            <div class="about-content">
+              <h6 class="text-uppercase">ABOUT US</h6>
+              <h2 class="section-title">BharatEdge Services Pvt Ltd</h2>
+              <p class="section-text">
+                We are a one-stop innovative business solutions consultancy for
+                Indian startups and MSMEs, specializing in everything from
+                incorporation to business expansion
+              </p>
+              <a href="about.html" class="btn btn-primary">KNOW MORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="mission-vision-section py-5">
+      <div class="container">
+        <div class="row justify-content-center g-4">
+          <div class="col-lg-6">
+            <div class="mission-card">
+              <h2 class="mission-title">Mission</h2>
+              <p class="mission-text">
+                To make BharatEdge, India's go to consultancy for innovative
+                business solutions.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="vision-card">
+              <h2 class="vision-title">Vision</h2>
+              <p class="vision-text">
+                To empower Indian startups and MSMEs through transparent,
+                results-oriented support with the help of talented
+                professionals.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section py-5">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="section-title">Explore services</h2>
+          <p class="section-subtitle">Anything You Need. Everything We Do.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-rocket"></i>
+              </div>
+              <h3>Aarambh - Start your Business</h3>
+              <ul class="list-unstyled service-list">
+                <li>Private Limited Company</li>
+                <li>Public Limited Company</li>
+                <li>Limited Liability Partnership</li>
+                <li>Partnership Firm Registration (ROF)</li>
+                <li>Section 8 Company</li>
+                <li>12A and 80G Registration</li>
+                <li>Non Profit Company Registration</li>
+                <li>Nidhi Company Registration</li>
+              </ul>
+              <a href="services/aarambh.html" class="btn btn-outline-primary"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h3>Kavach - Protect your business</h3>
+              <ul class="list-unstyled service-list">
+                <li>NGO Darpan Registration</li>
+                <li>GeM Certificate</li>
+                <li>Shram Suvidha Registration</li>
+                <li>Trademark Registration</li>
+                <li>ISI Registration</li>
+                <li>Organic Registration</li>
+                <li>BEE registration</li>
+                <li>BIS registration</li>
+              </ul>
+              <a href="services/kavach.html" class="btn btn-outline-primary"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <h3>Pramanit - Get certified</h3>
+              <ul class="list-unstyled service-list">
+                <li>START-UP India Certificate</li>
+                <li>Tax Exemption Certificate</li>
+                <li>ZED Certificate</li>
+                <li>ISO Certificate</li>
+                <li>GST Registration & Certificate</li>
+                <li>FSSAI Certificate</li>
+                <li>IEC Certificate</li>
+                <li>NSIC Certification</li>
+              </ul>
+              <a href="services/pramanit.html" class="btn btn-outline-primary"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-hand-holding-usd"></i>
+              </div>
+              <h3>Nidhi - Fund your Business</h3>
+              <ul class="list-unstyled service-list">
+                <li>Government Grants and Funding</li>
+                <li>Central Govt. - CGTMSE</li>
+                <li>Venture Capital</li>
+                <li>Seed Money</li>
+                <li>RKVY- RAFTAAR</li>
+                <li>NAIFF</li>
+                <li>MSME Design</li>
+                <li>Grant for Textile</li>
+              </ul>
+              <a href="services/nidhi.html" class="btn btn-outline-primary"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h3>Vikas - Grow your business</h3>
+              <ul class="list-unstyled service-list">
+                <li>Project Financing</li>
+                <li>Machinery Loan</li>
+                <li>Green Field Loan</li>
+                <li>Working Capital (CGTMSE Loan)</li>
+                <li>Business Loan</li>
+                <li>Line of Credit</li>
+                <li>MSME LOAN</li>
+                <li>PMEGP LOAN</li>
+              </ul>
+              <a href="services/vikas.html" class="btn btn-outline-primary"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-bullhorn"></i>
+              </div>
+              <h3>Vistar - Amplify your business</h3>
+              <ul class="list-unstyled service-list">
+                <li>Logo Design</li>
+                <li>Digital Marketing</li>
+                <li>Website Development</li>
+                <li class="coming-soon">More services coming soon...</li>
+              </ul>
+              <a href="services/vistar.html" class="btn btn-outline-primary"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section py-5 bg-light">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2>Our 4 Step Process</h2>
+          <p>
+            BharatEdge Services Pvt Ltd is a premier, one-stop business
+            consultancy in India
           </p>
         </div>
-
-        <main>
-          <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-            <div class="col">
-              <div class="card mb-4 rounded-3 shadow-sm">
-                <div class="card-header py-3">
-                  <h4 class="my-0 fw-normal">Free</h4>
-                </div>
-                <div class="card-body">
-                  <h1 class="card-title pricing-card-title">
-                    $0<small class="text-body-secondary fw-light">/mo</small>
-                  </h1>
-                  <ul class="list-unstyled mt-3 mb-4">
-                    <li>10 users included</li>
-                    <li>2 GB of storage</li>
-                    <li>Email support</li>
-                    <li>Help center access</li>
-                  </ul>
-                  <button
-                    type="button"
-                    class="w-100 btn btn-lg btn-outline-primary"
-                  >
-                    Sign up for free
-                  </button>
-                </div>
+        <div class="row g-4">
+          <div class="col-md-3">
+            <div class="process-card text-center">
+              <div class="process-icon">
+                <i class="fas fa-check-circle"></i>
               </div>
-            </div>
-            <div class="col">
-              <div class="card mb-4 rounded-3 shadow-sm">
-                <div class="card-header py-3">
-                  <h4 class="my-0 fw-normal">Pro</h4>
-                </div>
-                <div class="card-body">
-                  <h1 class="card-title pricing-card-title">
-                    $15<small class="text-body-secondary fw-light">/mo</small>
-                  </h1>
-                  <ul class="list-unstyled mt-3 mb-4">
-                    <li>20 users included</li>
-                    <li>10 GB of storage</li>
-                    <li>Priority email support</li>
-                    <li>Help center access</li>
-                  </ul>
-                  <button type="button" class="w-100 btn btn-lg btn-primary">
-                    Get started
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                <div class="card-header py-3 text-bg-primary border-primary">
-                  <h4 class="my-0 fw-normal">Enterprise</h4>
-                </div>
-                <div class="card-body">
-                  <h1 class="card-title pricing-card-title">
-                    $29<small class="text-body-secondary fw-light">/mo</small>
-                  </h1>
-                  <ul class="list-unstyled mt-3 mb-4">
-                    <li>30 users included</li>
-                    <li>15 GB of storage</li>
-                    <li>Phone and email support</li>
-                    <li>Help center access</li>
-                  </ul>
-                  <button type="button" class="w-100 btn btn-lg btn-primary">
-                    Contact us
-                  </button>
-                </div>
-              </div>
+              <h4>Choose Your Service</h4>
+              <p>
+                Explore our range of services and select the one aligns with
+                your needs and goals.
+              </p>
             </div>
           </div>
-        </main>
-      </section>
-      <section id="services"></section>
-      <!-- Changed duplicate "hero" id to "services" -->
-    </div>
-
-    <!-- Footer -->
-    <footer class="text-center text-lg-start text-white">
-      <!-- Section: Social media -->
-      <section
-        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-      >
-        <!-- Left -->
-        <div class="me-5 d-none d-lg-block">
-          <span>Get connected with us on social networks:</span>
-        </div>
-        <!-- Left -->
-
-        <!-- Right -->
-        <div>
-          <a href="" class="me-4 text-reset text-decoration-none">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="" class="me-4 text-reset text-decoration-none">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="" class="me-4 text-reset text-decoration-none">
-            <i class="fab fa-google"></i>
-          </a>
-          <a href="" class="me-4 text-reset text-decoration-none">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="" class="me-4 text-reset text-decoration-none">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="" class="me-4 text-reset text-decoration-none">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
-        <!-- Right -->
-      </section>
-      <!-- Section: Social media -->
-
-      <!-- Section: Links  -->
-      <section class="text-decoration-none">
-        <div class="container text-center text-md-start mt-5">
-          <!-- Grid row -->
-          <div class="row mt-3">
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-              <!-- Content -->
-              <h6 class="text-uppercase fw-bold mb-4">
-                <i class="fas fa-gem me-3"></i>Company name
-              </h6>
+          <div class="col-md-3">
+            <div class="process-card text-center">
+              <div class="process-icon">
+                <i class="fas fa-calendar-alt"></i>
+              </div>
+              <h4>Make Appointment</h4>
               <p>
-                Here you can use rows and columns to organize your footer
-                content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
+                Schedule a convenient appointment time with our expert team.
               </p>
             </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Products</h6>
-              <p>
-                <a href="#!" class="text-reset text-decoration-none">Angular</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset text-decoration-none">React</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset text-decoration-none">Vue</a>
-              </p>
-              <p>
-                <a href="#!" class="text-reset text-decoration-none">Laravel</a>
-              </p>
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
-              <p>
-                <a href="#!" class="text-reset text-decoration-none py-3">
-                  <i class="ri-home-wifi-line"></i> Home</a
-                >
-              </p>
-              <p>
-                <a href="#!" class="text-reset text-decoration-none">
-                  <i class="ri-information-line"></i> About Us</a
-                >
-              </p>
-              <p>
-                <a href="#!" class="text-reset text-decoration-none">
-                  <i class="ri-file-chart-line"></i> Services</a
-                >
-              </p>
-              <p>
-                <a href="#!" class="text-reset text-decoration-none"
-                  ><i class="ri-briefcase-4-fill"></i> Career</a
-                >
-              </p>
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-              <!-- Links -->
-              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-              <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
-              <p>
-                <i class="fas fa-envelope me-3"></i>
-                info@example.com
-              </p>
-              <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-              <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
-            </div>
-            <!-- Grid column -->
           </div>
-          <!-- Grid row -->
+          <div class="col-md-3">
+            <div class="process-card text-center">
+              <div class="process-icon">
+                <i class="fas fa-credit-card"></i>
+              </div>
+              <h4>Complete Payment</h4>
+              <p>Finalize the transaction securely to proceed.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="process-card text-center">
+              <div class="process-icon">
+                <i class="fas fa-handshake"></i>
+              </div>
+              <h4>Enjoy Your Service</h4>
+              <p>
+                Sit back, relax, and experience the benefits of our top-notch
+                service!
+              </p>
+            </div>
+          </div>
         </div>
-      </section>
-      <!-- Section: Links  -->
-
-      <!-- Copyright -->
-      <div
-        class="text-center p-4"
-        style="background-color: rgba(0, 0, 0, 0.05)"
-      >
-        Copyright All Right Reserved ©2025 Developed & Managed By
-        <a
-          class="text-reset text-decoration-none fw-bold"
-          href="https://hitarthshah.tech/"
-          >Hitarth Shah</a
-        >
       </div>
-      <!-- Copyright -->
-    </footer>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section py-5">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-3">
+            <div class="stat-card">
+              <h3><span class="counter" data-target="24">0</span>+</h3>
+              <p>Service Option</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="stat-card">
+              <h3><span class="counter" data-target="500">0</span>+</h3>
+              <p>Completed Project</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="stat-card">
+              <h3><span class="counter" data-target="50">0</span>+</h3>
+              <p>Year Combined Experience</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="stat-card">
+              <h3><span class="counter" data-target="100">0</span> CR</h3>
+              <p>Seed Funding</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Partners Section -->
+    <section class="partners-section py-5">
+      <div class="container">
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+          <h2 class="section-title">Our Partners</h2>
+        </div>
+        <div class="partners-grid">
+          <div class="partner-logo" data-aos="zoom-in" data-aos-delay="100">
+            <img
+              src="https://placehold.co/200x100/035096/ffffff/png?text=Partner+1"
+              alt="Partner 1"
+              class="img-fluid"
+            />
+          </div>
+          <div class="partner-logo" data-aos="zoom-in" data-aos-delay="200">
+            <img
+              src="https://placehold.co/200x100/035096/ffffff/png?text=Partner+2"
+              alt="Partner 2"
+              class="img-fluid"
+            />
+          </div>
+          <div class="partner-logo" data-aos="zoom-in" data-aos-delay="300">
+            <img
+              src="https://placehold.co/200x100/035096/ffffff/png?text=Partner+3"
+              alt="Partner 3"
+              class="img-fluid"
+            />
+          </div>
+          <div class="partner-logo" data-aos="zoom-in" data-aos-delay="400">
+            <img
+              src="https://placehold.co/200x100/035096/ffffff/png?text=Partner+4"
+              alt="Partner 4"
+              class="img-fluid"
+            />
+          </div>
+          <div class="partner-logo" data-aos="zoom-in" data-aos-delay="500">
+            <img
+              src="https://placehold.co/200x100/035096/ffffff/png?text=Partner+5"
+              alt="Partner 5"
+              class="img-fluid"
+            />
+          </div>
+          <div class="partner-logo" data-aos="zoom-in" data-aos-delay="600">
+            <img
+              src="https://placehold.co/200x100/035096/ffffff/png?text=Partner+6"
+              alt="Partner 6"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <div class="disclaimer-section mt-5" data-aos="fade-up">
+          <p class="disclaimer-text">
+            <strong>Disclaimer:</strong> We are a start-up consultant in India
+            and professionals in start-up consultation. We understand the
+            requirements of today's enterprises. We are merely a consultancy
+            service-providing company and are not affiliated with any
+            government, non-government agency, institution, organization, or
+            department.
+          </p>
+          <p class="payment-note mt-4">
+            <strong>Note:</strong> Payments for services are only accepted in
+            the name of BharatEdge Services Private Limited, and the type of
+            account is solely "Current Account" via NEFT/IMPS/RTGS and digital
+            payment (UPI), we do not accept payments on personal accounts or
+            under any other name.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reach Us Section -->
+    <section class="reach-us-section py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="reach-us-content">
+              <h2 class="section-title">Reach Us Here</h2>
+              <h3 class="consultation-title">
+                Consult Us Today To Grow Your Business
+              </h3>
+              <div class="consultation-features">
+                <div class="feature-item">
+                  <div class="feature-icon">
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <div class="feature-text">24 Accurate Response</div>
+                </div>
+                <div class="feature-item">
+                  <div class="feature-icon">
+                    <i class="fas fa-headset"></i>
+                  </div>
+                  <div class="feature-text">24x7 Inbound Enquiry</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="consultation-form-card">
+              <form class="consultation-form">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your Name*"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Your Email*"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="tel"
+                    class="form-control"
+                    placeholder="Your Phone*"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <select class="form-select" required>
+                    <option value="" selected disabled>Select Service*</option>
+                    <option value="aarambh">
+                      Aarambh - Start your Business
+                    </option>
+                    <option value="kavach">
+                      Kavach - Protect your Business
+                    </option>
+                    <option value="pramanit">Pramanit - Get Certified</option>
+                    <option value="nidhi">Nidhi - Fund your Business</option>
+                    <option value="vikas">Vikas - Grow your Business</option>
+                    <option value="vistar">
+                      Vistar - Amplify your Business
+                    </option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    rows="4"
+                    placeholder="Your Message"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">
+                  Book Free Consultation
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Footer -->
-    <!-- Bootstrap & Popper.js Scripts -->
+    <footer class="footer text-white">
+      <div class="container py-4">
+        <div class="row g-4">
+          <div class="col-lg-3">
+            <img
+              src="img/BharatEdge-New-Logo-Black.png"
+              alt="BharatEdge Logo"
+              width="180"
+              class="mb-2"
+            />
+            <p class="mb-0">
+              Your trusted partner in business solutions. We help businesses
+              grow through innovative strategies and proven results.
+            </p>
+          </div>
+          <div class="col-lg-3 justify-content-center align-items-center">
+            <h5 class="mb-3">Quick Links</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">
+                <a href="index.html" class="text-white">Home</a>
+              </li>
+              <li class="mb-2">
+                <a href="about.html" class="text-white">About Us</a>
+              </li>
+              <li class="mb-2"><a href="#" class="text-white">Services</a></li>
+              <li class="mb-2">
+                <a href="partners.html" class="text-white">Partners</a>
+              </li>
+              <li><a href="contact.html" class="text-white">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="mb-3">Our Services</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">
+                <a href="services/aarambh.html" class="text-white">Aarambh</a>
+              </li>
+              <li class="mb-2">
+                <a href="services/kavach.html" class="text-white">Kavach</a>
+              </li>
+              <li class="mb-2">
+                <a href="services/pramanit.html" class="text-white">Pramanit</a>
+              </li>
+              <li class="mb-2">
+                <a href="services/nidhi.html" class="text-white">Nidhi</a>
+              </li>
+              <li class="mb-2">
+                <a href="services/vikas.html" class="text-white">Vikas</a>
+              </li>
+              <li>
+                <a href="services/vistar.html" class="text-white">Vistar</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="mb-3">Connect With Us</h5>
+            <div class="social-links mb-3">
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="text-white"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+            <p class="mb-1"><i class="fas fa-phone"></i> +91 6358054005</p>
+            <p class="mb-0">
+              <i class="fas fa-envelope"></i> support@bharat-edge.com
+            </p>
+          </div>
+        </div>
+        <hr class="my-3" />
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <p class="mb-0 text-center text-lg-start">
+              &copy; 2024 Bharat Edge. All rights reserved.
+            </p>
+          </div>
+          <div class="col-lg-6 text-center text-lg-end">
+            <a href="terms.html" class="text-white me-3">Terms & Conditions</a>
+            <a href="privacy.html" class="text-white">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
     <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-      crossorigin="anonymous"
-    ></script>
+
+    <!-- Counter Animation Script -->
+    <script>
+      const counters = document.querySelectorAll(".counter");
+
+      const animateCounter = (counter) => {
+        const target = parseInt(counter.getAttribute("data-target"));
+        const count = parseInt(counter.innerText);
+        const increment = target / 100;
+
+        if (count < target) {
+          counter.innerText = Math.ceil(count + increment);
+          setTimeout(() => animateCounter(counter), 20);
+        } else {
+          counter.innerText = target;
+        }
+      };
+
+      const observerOptions = {
+        threshold: 0.5,
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const counters = entry.target.querySelectorAll(".counter");
+            counters.forEach((counter) => animateCounter(counter));
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      const statsSection = document.querySelector(".stats-section");
+      observer.observe(statsSection);
+    </script>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100,
+        easing: "ease-in-out",
+      });
+    </script>
   </body>
 </html>
