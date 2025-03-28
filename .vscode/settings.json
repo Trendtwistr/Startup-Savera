@@ -2,11 +2,16 @@
   "cSpell.ignoreWords": [
     "Aarambh",
     "Kavach",
+    "Majeure",
     "Nidhi",
     "Pramanit",
     "Vikas",
-    "Vistar"
+    "Vistar",
+    "savera"
   ],
-  "cSpell.words": ["Darpan"],
-  "liveServer.settings.port": 5501
+  "cSpell.words": [
+    "Darpan",
+    "thirdparty"
+  ],
+  "liveServer.settings.port": 5502
 }

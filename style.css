@@ -212,7 +212,7 @@ body {
 @media (max-width: 991px) {
   .about-content {
     padding: 2rem 0;
-  text-align: center;
+    text-align: center;
   }
 
   .about-content h6:after {
@@ -1831,7 +1831,7 @@ body {
   }
 
   /* Footer Responsive */
-.footer {
+  .footer {
     padding: 40px 0 20px;
   }
 
@@ -2250,4 +2250,127 @@ body {
 .table-filter select:focus {
   border-color: var(--accent-color);
   box-shadow: 0 0 0 0.2rem rgba(0, 174, 239, 0.25);
+}
+
+/* Terms & Conditions Page Styles */
+.terms-hero-section {
+  padding: 120px 0 60px;
+  background: linear-gradient(135deg, #f37608 3%, #01db0971 100%);
+}
+
+.terms-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.terms-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 0;
+}
+
+.terms-content {
+  background: #fff;
+}
+
+.terms-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+}
+
+.terms-section {
+  margin-bottom: 2rem;
+}
+
+.terms-section:last-child {
+  margin-bottom: 0;
+}
+
+.terms-section h2 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.terms-section h3 {
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.terms-section p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.terms-section ul {
+  list-style: none;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.terms-section ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #666;
+}
+
+.terms-section ul li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary-color);
+}
+
+@media (max-width: 991px) {
+  .terms-hero-section {
+    padding: 100px 0 40px;
+  }
+
+  .terms-title {
+    font-size: 2rem;
+  }
+
+  .terms-card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .terms-hero-section {
+    padding: 80px 0 30px;
+  }
+
+  .terms-title {
+    font-size: 1.75rem;
+  }
+
+  .terms-subtitle {
+    font-size: 1rem;
+  }
+
+  .terms-card {
+    padding: 1.25rem;
+  }
+
+  .terms-section h2 {
+    font-size: 1.35rem;
+  }
+
+  .terms-section h3 {
+    font-size: 1.15rem;
+  }
 }
