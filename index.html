@@ -53,7 +53,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse mx-auto" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="./index.html"
@@ -65,22 +65,96 @@
             </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+              class="nav-link dropdown-toggle"
+              href="Services.html"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              onclick="window.location.href='Services.html'"
+              >Services</a
+            >
+              <div
+                class="dropdown-menu megamenu"
+                aria-labelledby="navbarDropdownMenuLink"
               >
-                Services
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Aarambh</a></li>
-                <li><a class="dropdown-item" href="#">Kavach</a></li>
-                <li><a class="dropdown-item" href="#">Pramanit</a></li>
-                <li><a class="dropdown-item" href="#">Nidhi</a></li>
-                <li><a class="dropdown-item" href="#">Vikas</a></li>
-                <li><a class="dropdown-item" href="#">Vistar</a></li>
-              </ul>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-2">
+                      <h6>AARAMBH</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Private Limited Company</a></li>
+                        <li><a href="#">One Person Company Registration</a></li>
+                        <li><a href="#">Limited Liability Partnership</a></li>
+                        <li>
+                          <a href="#">Partnership Firm Registration (ROF)</a>
+                        </li>
+                        <li><a href="#">Section 8 Company</a></li>
+                        <li><a href="#">12A and 80G Registration</a></li>
+                        <li><a href="#">Nidhi Company Registration</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-2">
+                      <h6>KAVACH</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Shram Suvidha Registration</a></li>
+                        <li><a href="#">Trademark Registration</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-2">
+                      <h6>PRAMANIT</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#">START-UP India Certificate</a></li>
+                        <li><a href="#">GeM Certificate</a></li>
+                        <li><a href="#">Tax Exemption Certificate</a></li>
+                        <li><a href="#">ZED Certificate</a></li>
+                        <li><a href="#">ISO Certificate</a></li>
+                        <li><a href="#">GST Registration & Certificate</a></li>
+                        <li><a href="#">FSSAI Certificate</a></li>
+                        <li><a href="#">IEC Certificate</a></li>
+                        <li><a href="#">NSIC Certification</a></li>
+                        <li><a href="#">Udyog Aadhar (MSME)</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-2">
+                      <h6>NIDHI</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Government Grants</a></li>
+                        <li><a href="#">Central Govt. - CGTMSE</a></li>
+                        <li><a href="#">Venture Capital</a></li>
+                        <li><a href="#">Seed Money</a></li>
+                        <li><a href="#">RKVY- RAFTAAR</a></li>
+                        <li><a href="#">NAIFF</a></li>
+                        <li><a href="#">MSME Design</a></li>
+                        <li><a href="#">Grant for Textile</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-2">
+                      <h6>VIKAS</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Project Financing</a></li>
+                        <li><a href="#">Machinery Loan</a></li>
+                        <li><a href="#">Green Field Loan</a></li>
+                        <li><a href="#">Working Capital</a></li>
+                        <li><a href="#">Business Loan</a></li>
+                        <li><a href="#">Line of Credit</a></li>
+                        <li><a href="#">MSME LOAN</a></li>
+                        <li><a href="#">PMEGP LOAN</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-2">
+                      <h6>VISTAR</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Logo Design</a></li>
+                        <li><a href="#">Digital Marketing</a></li>
+                        <li><a href="#">Website Development</a></li>
+                        <li><a href="#">More Coming Soon...</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./partners.html">Partners</a>
@@ -93,8 +167,8 @@
             </li>
           </ul>
         </div>
-        <a href="tel:+916358054005" class="helpline d-none d-lg-block">
-          <span>Helpline</span> <br />+91 6358054005
+        <a href="tel:+916358054005" class="helpline d-none d-lg-block text-end">
+          <span>Helpline</span><br />+91 6358054005
         </a>
       </div>
     </nav>
@@ -110,7 +184,7 @@
               <a href="#" class="btn btn-primary">Book Appointment</a>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 py-4">
             <img
               src="https://picsum.photos/600/400"
               alt="Business Growth"
@@ -638,7 +712,14 @@
         <div class="row align-items-center">
           <div class="col-lg-6">
             <p class="mb-0 text-center text-lg-start">
-              &copy; 2024 Bharat Edge. All rights reserved.
+              &copy; <a href="#">Startup Savera</a> All Rights Reserved.
+              Designed by
+              <a
+                href="http://www.trendtwistr.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Trendtwistr</a
+              >
             </p>
           </div>
           <div class="col-lg-6 text-center text-lg-end">
@@ -690,6 +771,10 @@
       const statsSection = document.querySelector(".stats-section");
       observer.observe(statsSection);
     </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!-- AOS Script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
