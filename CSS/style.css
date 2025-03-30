@@ -382,6 +382,20 @@ body {
   padding: 12px 30px;
 }
 
+.btn-book {
+  background-color: var(--accent-color);
+  border: none;
+  color: var(--light-bg);
+  padding: 12px 30px;
+}
+
+.btn-book:hover{
+  background-color: var(--accent-color);
+  border: none;
+  color: var(--light-bg);
+  padding: 12px 30px;
+}
+
 .btn-outline-services {
   color: var(--primary-color);
   border-color: var(--primary-color);
@@ -2219,7 +2233,7 @@ body {
 .terms-card {
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 10px 10px 80px 10px rgba(0, 0, 0, 0.3);
   padding: 2rem;
 }
 
