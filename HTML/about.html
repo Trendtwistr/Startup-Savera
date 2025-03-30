@@ -29,16 +29,16 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-white fixed-top">
+    <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img
-            src="./img/startup-savera.png"
-            alt=" Startup Savera Company Logo"
+            src="../img/startup-savera.png"
+            alt="Startup Savera Company Logo"
             width="180"
             style="padding: 0"
           />
@@ -54,7 +54,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse mx-auto" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="./index.html"
@@ -62,12 +62,16 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="./about.html">About Us</a>
+              <a class="nav-link" href="./about.html">About Us</a>
             </li>
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
-                href="#" data-bs-toggle="dropdown"> Services</a
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Services</a
               >
               <div class="dropdown-menu megamenu">
                 <div class="container">
@@ -150,8 +154,21 @@
             <li class="nav-item">
               <a class="nav-link" href="./partners.html">Partners</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./featured.html">Featured</a>
+            <li class="dropdown">
+              <a
+                class="nav-link dropdown-toggle dropbtn"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Featured</a
+              >
+              <ul class="list-unstyled dropdown-content">
+                <li><a href="#">Life@BharatEdge</a></li>
+                <li><a href="#">Career</a></li>
+                <li><a href="./privacy.html">Privacy Policy</a></li>
+                <li><a href="./terms.html">Terms & Conditions</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./contact.html">Contact Us</a>
@@ -224,7 +241,7 @@
             <div class="mission-card">
               <h2 class="mission-title">Mission</h2>
               <p class="mission-text">
-                To make  Startup Savera, India's go to consultancy for innovative
+                To make Startup Savera, India's go to consultancy for innovative
                 business solutions.
               </p>
             </div>
@@ -382,7 +399,7 @@
         <div class="row g-4">
           <div class="col-lg-4">
             <img
-              src="img/startup-savera.png"
+              src="../img/startup-savera.png"
               alt="startup-savera Logo"
               width="180"
               class="mb-2"
@@ -396,38 +413,38 @@
             <h5 class="mb-3">Quick Links</h5>
             <ul class="list-unstyled mb-0">
               <li class="mb-2">
-                <a href="index.html" class="text-white">Home</a>
+                <a href="./index.html" class="text-white">Home</a>
               </li>
               <li class="mb-2">
-                <a href="about.html" class="text-white">About Us</a>
+                <a href="./about.html" class="text-white">About Us</a>
               </li>
               <li class="mb-2"><a href="#" class="text-white">Services</a></li>
               <li class="mb-2">
-                <a href="partners.html" class="text-white">Partners</a>
+                <a href="./partners.html" class="text-white">Partners</a>
               </li>
-              <li><a href="contact.html" class="text-white">Contact</a></li>
+              <li><a href="./contact.html" class="text-white">Contact</a></li>
             </ul>
           </div>
           <div class="col-lg-3">
             <h5 class="mb-3">Our Services</h5>
             <ul class="list-unstyled mb-0">
               <li class="mb-2">
-                <a href="services/aarambh.html" class="text-white">Aarambh</a>
+                <a href="#" class="text-white">Aarambh</a>
               </li>
               <li class="mb-2">
-                <a href="services/kavach.html" class="text-white">Kavach</a>
+                <a href="#" class="text-white">Kavach</a>
               </li>
               <li class="mb-2">
-                <a href="services/pramanit.html" class="text-white">Pramanit</a>
+                <a href="#" class="text-white">Pramanit</a>
               </li>
               <li class="mb-2">
-                <a href="services/nidhi.html" class="text-white">Nidhi</a>
+                <a href="#" class="text-white">Nidhi</a>
               </li>
               <li class="mb-2">
-                <a href="services/vikas.html" class="text-white">Vikas</a>
+                <a href="#" class="text-white">Vikas</a>
               </li>
               <li>
-                <a href="services/vistar.html" class="text-white">Vistar</a>
+                <a href="#" class="text-white">Vistar</a>
               </li>
             </ul>
           </div>
@@ -457,8 +474,13 @@
         <div class="row align-items-center">
           <div class="col-lg-6">
             <p class="mb-0 text-center text-lg-start">
-              &copy; 2024  Startup Savera. All rights reserved.
-            </p>
+              &copy; <a href="#">Startup Savera</a> All Rights Reserved.
+              Designed by
+              <a
+                href="http://www.trendtwistr.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Trendtwistr</a>
           </div>
           <div class="col-lg-6 text-center text-lg-end">
             <a href="terms.html" class="text-white me-3">Terms & Conditions</a>
