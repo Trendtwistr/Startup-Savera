@@ -389,7 +389,7 @@ body {
   padding: 12px 30px;
 }
 
-.btn-book:hover{
+.btn-book:hover {
   background-color: var(--accent-color);
   border: none;
   color: var(--light-bg);
