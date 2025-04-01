@@ -28,12 +28,12 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-white fixed-top">
+    <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img
             src="../img/startup-savera.png"
-            alt=" Startup Savera Company Logo"
+            alt="Startup Savera Company Logo"
             width="180"
             style="padding: 0"
           />
@@ -49,23 +49,24 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse mx-auto" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./index.html"
+              <a class="nav-link" aria-current="page" href="../HTML/index.html"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./about.html">About Us</a>
+              <a class="nav-link" href="../HTML/about.html">About Us</a>
             </li>
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
+                role="button"
                 data-bs-toggle="dropdown"
-              >
-                Services</a
+                aria-expanded="false"
+                >Services</a
               >
               <div class="dropdown-menu megamenu">
                 <div class="container">
@@ -146,13 +147,26 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./partners.html">Partners</a>
+              <a class="nav-link" href="../HTML/partners.html">Partners</a>
+            </li>
+            <li class="dropdown">
+              <a
+                class="nav-link dropdown-toggle dropbtn"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Featured</a
+              >
+              <ul class="list-unstyled dropdown-content">
+                <li><a href="#">Life@BharatEdge</a></li>
+                <li><a href="#">Career</a></li>
+                <li><a href="../HTML/privacy.html">Privacy Policy</a></li>
+                <li><a href="../HTML/terms.html">Terms & Conditions</a></li>
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./featured.html">Featured</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="./contact.html">Contact Us</a>
+              <a class="nav-link" href="../HTML/contact.html">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -161,6 +175,7 @@
         </a>
       </div>
     </nav>
+
     <!-- Contact Hero Section -->
     <section class="contact-hero-section">
       <div class="container">
@@ -284,7 +299,7 @@
                     </div>
                   </div>
                   <div class="col-12 text-center">
-                    <button type="submit" class="btn btn-primary">
+                    <button type="submit" class="btn btn-main">
                       Send Message
                     </button>
                   </div>
@@ -452,9 +467,6 @@
               </li>
               <li class="mb-2">
                 <a href="#" class="text-white">Vikas</a>
-              </li>
-              <li>
-                <a href="#" class="text-white">Vistar</a>
               </li>
             </ul>
           </div>

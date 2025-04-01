@@ -21,7 +21,7 @@ body {
 }
 
 /* Responsive Typography */
-/* html {
+html {
   font-size: 16px;
 }
 
@@ -42,10 +42,10 @@ body {
   html {
     font-size: 13px;
   }
-} */
+}
 
 /* Enhanced Mobile Navigation */
-/* @media (max-width: 991px) {
+@media (max-width: 991px) {
   .navbar {
     padding: 0.5rem 1rem;
   }
@@ -85,10 +85,10 @@ body {
   .megamenu .row>div {
     margin-bottom: 1rem;
   }
-} */
+}
 
 /* Enhanced Mobile Hero Section */
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .hero-section {
     padding: 100px 0 60px;
     text-align: center;
@@ -109,10 +109,10 @@ body {
   .hero-section img {
     margin-top: 2rem;
   }
-} */
+}
 
 /* Enhanced Service Cards for Mobile */
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .service-card {
     margin-bottom: 1.5rem;
     padding: 1.5rem;
@@ -130,10 +130,10 @@ body {
     width: 100%;
     margin-top: 1rem;
   }
-} */
+}
 
 /* Enhanced Form Responsiveness */
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .form-control {
     font-size: 1rem;
     padding: 0.75rem;
@@ -147,10 +147,10 @@ body {
   .form-group {
     margin-bottom: 1rem;
   }
-} */
+}
 
 /* Enhanced Footer for Mobile */
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .footer {
     text-align: center;
     padding: 2rem 0;
@@ -169,10 +169,10 @@ body {
     justify-content: center;
     margin: 1rem 0;
   }
-} */
+}
 
 /* Enhanced Table Responsiveness */
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .table-responsive {
     border: 0;
   }
@@ -204,21 +204,21 @@ body {
     float: left;
     font-weight: bold;
   }
-} */
+}
 
 /* Enhanced Image Responsiveness */
-/* img {
+img {
   max-width: 100%;
   height: auto;
-} */
+}
 
 /* Enhanced Grid System */
-/* .row {
+.row {
   margin-right: -15px;
   margin-left: -15px;
-} */
+}
 
-/* @media (max-width: 576px) {
+@media (max-width: 576px) {
   .row {
     margin-right: -10px;
     margin-left: -10px;
@@ -228,10 +228,10 @@ body {
     padding-right: 10px;
     padding-left: 10px;
   }
-} */
+}
 
 /* Enhanced Spacing for Mobile */
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .section-padding {
     padding: 3rem 0;
   }
@@ -244,10 +244,10 @@ body {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
-} */
+}
 
 /* Enhanced Card Responsiveness */
-/* @media (max-width: 576px) {
+@media (max-width: 576px) {
   .card {
     margin-bottom: 1rem;
   }
@@ -259,10 +259,10 @@ body {
   .card-title {
     font-size: 1.25rem;
   }
-} */
+}
 
 /* Print Styles */
-/* @media print {
+@media print {
 
   .navbar,
   .footer,
@@ -278,14 +278,11 @@ body {
   a[href]:after {
     content: " (" attr(href) ")";
   }
-} */
+}
 
 /* Navbar Styles */
 .navbar {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  /* padding: 1rem 0; */
-  /* position: fixed; */
-  /* z-index: 1030; */
 }
 
 .navbar-brand img {
@@ -328,11 +325,9 @@ body {
 }
 
 .helpline {
-  background: linear-gradient(
-    180deg,
-    var(--primary-color) 0%,
-    var(--secondary-color) 100%
-  );
+  background: linear-gradient(180deg,
+      var(--primary-color) 0%,
+      var(--secondary-color) 100%);
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
@@ -372,11 +367,9 @@ body {
 }
 
 .btn-main {
-  background: linear-gradient(
-    180deg,
-    var(--primary-color) 0%,
-    var(--secondary-color) 100%
-  );
+  background: linear-gradient(180deg,
+      var(--primary-color) 0%,
+      var(--secondary-color) 100%);
   border: none;
   color: var(--light-bg);
   padding: 12px 30px;
@@ -440,7 +433,7 @@ body {
 }
 
 .about-section img {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); */
   transition: transform 0.3s ease;
 }
 
@@ -735,11 +728,9 @@ body {
 /* Stats Section */
 .stats-section {
   padding: 80px 0;
-  background: linear-gradient(
-    135deg,
-    var(--primary-color) 0%,
-    var(--secondary-color) 100%
-  );
+  background: linear-gradient(135deg,
+      var(--primary-color) 0%,
+      var(--secondary-color) 100%);
 }
 
 .stat-card {
@@ -814,11 +805,9 @@ body {
 
 /* Footer */
 .footer {
-  background: linear-gradient(
-    180deg,
-    var(--primary-color) 0%,
-    var(--secondary-color) 100%
-  );
+  background: linear-gradient(180deg,
+      var(--primary-color) 0%,
+      var(--secondary-color) 100%);
   padding: 80px 0 40px;
 }
 
@@ -1587,6 +1576,7 @@ body {
 }
 
 @media (max-width: 991px) {
+
   .mission-card,
   .vision-card {
     padding: 30px;
@@ -1706,11 +1696,9 @@ body {
   font-size: 1.1rem;
   font-weight: 600;
   border-radius: 10px;
-  background: linear-gradient(
-    180deg,
-    var(--primary-color) 0%,
-    var(--secondary-color) 100%
-  );
+  background: linear-gradient(180deg,
+      var(--primary-color) 0%,
+      var(--secondary-color) 100%);
   border: none;
   transition: all 0.4s ease;
 }
@@ -2501,4 +2489,82 @@ body {
 
 ul.list-unstyled.dropdown-content a:hover {
   color: var(--accent-color);
+}
+
+
+.ri-checkbox-circle-fill:before {
+  font-size: 30px;
+}
+ i.ri-checkbox-circle-fill {
+  font-size: 20px;
+}
+
+.benefits-section {
+  background-color: #fff;
+}
+
+.section-title {
+  color: var(--primary-color);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.benefits-list, .documents-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.benefits-list li, .documents-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.benefits-list li:before, .documents-list li:before {
+  content: "•";
+  color: var(--accent-color);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.delay-item {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--accent-color);
+}
+
+.initiative-text {
+  font-style: italic;
+  color: var(--accent-color);
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.document-item {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+      font-size: 1.5rem;
+  }
+  
+  .delay-item, .document-item {
+      padding: 1rem;
+  }
+  
+  .initiative-text {
+      font-size: 1rem;
+      padding: 1rem;
+  }
 }
