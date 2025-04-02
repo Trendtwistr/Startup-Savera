@@ -439,6 +439,7 @@ img {
 
 .about-section img:hover {
   transform: scale(1.02);
+  text-align: left;
 }
 
 .about-content {
@@ -759,7 +760,7 @@ img {
 
 .counter {
   display: inline-block;
-  min-width: 2em;
+  min-width: 1.3em;
   text-align: center;
 }
 
@@ -1008,7 +1009,27 @@ img {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
+.hero-section img {
+  transform: perspective(1000px) rotateY(-15deg);
+  transition: transform 0.5s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.partners-hero-section img {
+  transform: perspective(1000px) rotateY(-15deg);
+  transition: transform 0.5s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
 .about-hero-section img:hover {
+  transform: perspective(1000px) rotateY(0deg);
+}
+
+.hero-section img:hover {
+  transform: perspective(1000px) rotateY(0deg);
+}
+
+.partners-hero-section img:hover {
   transform: perspective(1000px) rotateY(0deg);
 }
 
@@ -1080,6 +1101,7 @@ img {
 .vision-card p {
   color: #666;
   margin-bottom: 0;
+  text-align: left;
 }
 
 .why-choose-us {
@@ -2359,6 +2381,15 @@ img {
 }
 
 /* Make dropdown full width */
+
+/* button: focus: not( :focus-visible){
+
+} */
+
+/* .navbar-toggler:focus{
+  box-shadow: var(--accent-color) !important;
+} */
+
 .navbar .dropdown {
   position: static;
 }
@@ -2495,7 +2526,8 @@ ul.list-unstyled.dropdown-content a:hover {
 .ri-checkbox-circle-fill:before {
   font-size: 30px;
 }
- i.ri-checkbox-circle-fill {
+
+i.ri-checkbox-circle-fill {
   font-size: 20px;
 }
 
@@ -2510,19 +2542,22 @@ ul.list-unstyled.dropdown-content a:hover {
   margin-bottom: 1.5rem;
 }
 
-.benefits-list, .documents-list ul {
+.benefits-list,
+.documents-list ul {
   list-style: none;
   padding-left: 0;
 }
 
-.benefits-list li, .documents-list li {
+.benefits-list li,
+.documents-list li {
   position: relative;
   padding-left: 1.5rem;
   margin-bottom: 1rem;
   line-height: 1.6;
 }
 
-.benefits-list li:before, .documents-list li:before {
+.benefits-list li:before,
+.documents-list li:before {
   content: "•";
   color: var(--accent-color);
   position: absolute;
@@ -2556,15 +2591,38 @@ ul.list-unstyled.dropdown-content a:hover {
 
 @media (max-width: 768px) {
   .section-title {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
-  
-  .delay-item, .document-item {
-      padding: 1rem;
+
+  .delay-item,
+  .document-item {
+    padding: 1rem;
   }
-  
+
   .initiative-text {
-      font-size: 1rem;
-      padding: 1rem;
+    font-size: 1rem;
+    padding: 1rem;
   }
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #e76b18 #5B5B5B;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #e76b18;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
 }
