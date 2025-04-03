@@ -3,6 +3,7 @@
   --primary-color: #035096;
   --secondary-color: #052669;
   --accent-color: #ef7f1a;
+  --ligth-accent:#ef7d1a91;
   --text-color: #333;
   --light-bg: #f8f9fa;
 }
@@ -985,6 +986,12 @@ img {
 
 /* About Page Styles */
 .about-hero-section {
+  padding: 120px 0 80px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  overflow: hidden;
+}
+
+.partners-hero-section {
   padding: 120px 0 80px;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   overflow: hidden;
@@ -2269,14 +2276,13 @@ img {
   font-weight: 600;
 }
 
-.terms-section p {
-  font-size: 1rem;
-  color: #666;
-  line-height: 1.7;
+.terms-section ul {
+  list-style: none;
+  padding-left: 1.5rem;
   margin-bottom: 1rem;
 }
 
-.terms-section ul {
+.terms-section ol {
   list-style: none;
   padding-left: 1.5rem;
   margin-bottom: 1rem;
@@ -2289,6 +2295,14 @@ img {
   color: #666;
 }
 
+.terms-section ol li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #666;
+}
+
+
 .terms-section ul li:before {
   content: "";
   position: absolute;
@@ -2299,6 +2313,28 @@ img {
   border-radius: 50%;
   background: var(--primary-color);
 }
+
+.terms-section ol {
+  list-style: none;
+  padding-left: 20px;
+  counter-reset: list-counter;
+}
+
+.terms-section ol li {
+  position: relative;
+  counter-increment: list-counter;
+  padding-left: 25px;
+}
+
+.terms-section ol li:before {
+  content: counter(list-counter) ".";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
 
 @media (max-width: 991px) {
   .terms-hero-section {
