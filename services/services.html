@@ -29,31 +29,6 @@
 
     <link rel="stylesheet" href="../CSS/style.css" />
     <style>
-      /* :root {
-        --primary-color: #0d6efd;
-        --secondary-color: #6c757d;
-        --accent-color: #ffc107;
-        --dark-color: #212529;
-        --light-color: #f8f9fa;
-      } */
-
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      }
-
-      .hero-section {
-        background: linear-gradient(
-            rgba(13, 110, 253, 0.8),
-            rgba(13, 110, 253, 0.9)
-          ),
-          url("https://placehold.co/1200x400");
-        background-size: cover;
-        background-position: center;
-        color: white;
-        padding: 5rem 0;
-        text-align: center;
-      }
-
       .service-tab {
         cursor: pointer;
         padding: 15px;
@@ -139,20 +114,23 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./index.html"
+              <a class="nav-link" aria-current="page" href="../HTML/index.html"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./about.html">About Us</a>
+              <a class="nav-link" href="../HTML/about.html">About Us</a>
             </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle"
+                class="nav-link active dropdown-toggle"
                 href="../services/services.html"
+                id="navbarDropdownMenuLink"
                 role="button"
-                data-bs-toggle="dropdown"
+                data-toggle="dropdown"
+                aria-haspopup="true"
                 aria-expanded="false"
+                onclick="window.location.href='Services.html'"
                 >Services</a
               >
               <div class="dropdown-menu megamenu">
@@ -162,7 +140,7 @@
                       <h6>AARAMBH</h6>
                       <ul class="list-unstyled">
                         <li>
-                          <a href="../services/private-limited-company.html"
+                          <a href="./private-limited-company.html"
                             >Private Limited Company</a
                           >
                         </li>
@@ -237,7 +215,7 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./partners.html">Partners</a>
+              <a class="nav-link" href="../HTML/partners.html">Partners</a>
             </li>
             <li class="dropdown">
               <a
@@ -251,12 +229,12 @@
               <ul class="list-unstyled dropdown-content">
                 <li><a href="#">Life@BharatEdge</a></li>
                 <li><a href="#">Career</a></li>
-                <li><a href="./privacy.html">Privacy Policy</a></li>
-                <li><a href="./terms.html">Terms & Conditions</a></li>
+                <li><a href="../HTML/privacy.html">Privacy Policy</a></li>
+                <li><a href="../HTML/terms.html">Terms & Conditions</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./contact.html">Contact Us</a>
+              <a class="nav-link" href="../HTML/contact.html">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -265,23 +243,7 @@
         </a>
       </div>
     </nav>
-
-    <section></section>
-
-    <!-- Hero Section -->
-    <!-- <section class="hero-section">
-      <div class="container">
-        <h1 class="display-4 fw-bold mb-4">Services</h1>
-        <p class="lead">Wide range of professional services</p>
-        <p class="mb-0">
-          A premier, one-stop business consultancy. Specializing in providing
-          comprehensive support to startups and MSMEs, our team of well-versed
-          professionals is committed to facilitating a hassle-free
-          transformation, operation and growth of your business.
-        </p>
-      </div>
-    </section> -->
-
+    
     <div class="container">
       <!-- Service Category Tabs -->
       <section class="py-5">
@@ -512,19 +474,6 @@
       </section>
     </div>
 
-    <!-- Quote Section -->
-    <!-- <section class="quote-section">
-      <div class="container">
-        <h2 class="display-6 fw-bold mb-4">Request A Quote</h2>
-        <p class="mb-4">
-          Ready to take your business to the next level? Request a quote today
-          and discover how our tailored consultancy services can help you
-          achieve your goals.
-        </p>
-        <a href="#" class="btn btn-light btn-lg">Get in Touch</a>
-      </div>
-    </section> -->
-
     <!-- Footer -->
     <footer class="footer text-white">
       <div class="container py-4">
@@ -644,7 +593,7 @@
     <!-- WhatsApp Button (Fixed) -->
     <div class="position-fixed bottom-0 end-0 mb-4 me-4">
       <a
-        href="https://wa.me/8488820605"
+        href="https://wa.me/9351262184"
         class="btn btn-success rounded-circle p-3 border-0"
         style="background-color: #25d366"
         target="_parent"
