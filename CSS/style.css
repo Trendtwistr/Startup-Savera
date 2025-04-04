@@ -14,13 +14,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
   /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+
   color: var(--text-color);
   line-height: 1.6;
   overflow-x: hidden;
