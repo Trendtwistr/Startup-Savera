@@ -633,7 +633,7 @@ img {
   transform: scale(1.5);
 }
 
-.service-list .coming-soon {
+.service-list {
   color: var(--accent-color);
   font-style: italic;
 }
