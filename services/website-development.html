@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Website Development - Startup Savera</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- FontAwesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Remix Icon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="../img/startup-savera.png"
+            alt="Startup Savera Company Logo"
+            width="180"
+            style="padding: 0"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../HTML/index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../HTML/about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active dropdown-toggle"
+                href="./services.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Services</a
+              >
+              <div class="dropdown-menu megamenu">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-2">
+                      <h6>Prarambh</h6>
+                      <ul class="list-unstyled">
+                        <li>
+                          <a href="./private-limited-company.html"
+                            >Private Limited Company</a
+                          >
+                        </li>
+                        <li><a href="#">One Person Company Registration</a></li>
+                        <li><a href="#">Limited Liability Partnership</a></li>
+                        <li>
+                          <a href="#">Partnership Firm Registration (ROF)</a>
+                        </li>
+                        <li><a href="#">Section 8 Company</a></li>
+                        <li><a href="#">12A and 80G Registration</a></li>
+                        <li><a href="#">Nidhi Company Registration</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-2">
+                      <h6>Suraksha</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Shram Suvidha Registration</a></li>
+                        <li><a href="#">Trademark Registration</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-2">
+                      <h6>Satyapit</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#">START-UP India Certificate</a></li>
+                        <li><a href="#">GeM Certificate</a></li>
+                        <li><a href="#">Tax Exemption Certificate</a></li>
+                        <li><a href="#">ZED Certificate</a></li>
+                        <li><a href="#">ISO Certificate</a></li>
+                        <li><a href="#">GST Registration & Certificate</a></li>
+                        <li><a href="#">FSSAI Certificate</a></li>
+                        <li><a href="#">IEC Certificate</a></li>
+                        <li><a href="#">NSIC Certification</a></li>
+                        <li><a href="#">Udyog Aadhar (MSME)</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-2">
+                      <h6>Sampatti</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Government Grants</a></li>
+                        <li><a href="#">Central Govt. - CGTMSE</a></li>
+                        <li><a href="#">Venture Capital</a></li>
+                        <li><a href="#">Seed Money</a></li>
+                        <li><a href="#">RKVY- RAFTAAR</a></li>
+                        <li><a href="#">NAIFF</a></li>
+                        <li><a href="#">MSME Design</a></li>
+                        <li><a href="#">Grant for Textile</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-2">
+                      <h6>Unnati</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="#">Project Financing</a></li>
+                        <li><a href="#">Machinery Loan</a></li>
+                        <li><a href="#">Green Field Loan</a></li>
+                        <li><a href="#">Working Capital</a></li>
+                        <li><a href="#">Business Loan</a></li>
+                        <li><a href="#">Line of Credit</a></li>
+                        <li><a href="#">MSME LOAN</a></li>
+                        <li><a href="#">PMEGP LOAN</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-lg-2">
+                      <h6>Prasar</h6>
+                      <ul class="list-unstyled">
+                        <li><a href="./logo-design.html">Logo Design</a></li>
+                        <li>
+                          <a href="./digital-marketing.html"
+                            >Digital Marketing</a
+                          >
+                        </li>
+                        <li>
+                          <a href="./digital-marketing.html"
+                            >Website Development</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../HTML/partners.html">Partners</a>
+            </li>
+            <li class="dropdown">
+              <a
+                class="nav-link dropdown-toggle dropbtn"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Featured</a
+              >
+              <ul class="list-unstyled dropdown-content">
+                <li><a href="#">Life@BharatEdge</a></li>
+                <li><a href="#">Career</a></li>
+                <li><a href="../HTML/privacy.html">Privacy Policy</a></li>
+                <li><a href="../HTML/terms.html">Terms & Conditions</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../HTML/contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <a href="tel:+916358054005" class="helpline d-none d-lg-block">
+          <span>Contact Number</span> <br />+91 6358054005
+        </a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h1 class="hero-title">Website Development</h1>
+            <p class="hero-subtitle">
+              Create a visually striking and user-friendly website that
+              highlights your brand and drives growth.
+            </p>
+            <div class="hero-buttons">
+              <a href="#consultation-form" class="btn btn-main"
+                >GET CONSULTATION</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-6 py-4">
+            <img
+              src="../img/Main/website_development.svg"
+              alt="private_limited_company_registration"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <section class="terms-content py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="terms-card">
+              <div class="terms-section">
+                <h2 class="d-flex justify-content-center">
+                  Website Development
+                </h2>
+                <p>
+                  Welcome to Startup Savera Services. your go to partner for
+                  innovative website development solutions. In today's
+                  fast-paced digital era, a strong online presence is essential
+                  for success. Our expert team crafts visually stunning,
+                  user-friendly, and high-performing websites tailored to your
+                  business needs, ensuring a seamless experience for your
+                  audience.
+                </p>
+              </div>
+            </div>
+            <div class="py-5">
+              <div
+                class="terms-card"
+                style="background-color: #043175; color: #fff"
+              >
+                <div class="">
+                  <h2 class="benefite">Benefits</h2>
+                  <div class="row">
+                    <div class="col">
+                      <p>
+                        <i class="ri-checkbox-circle-fill">
+                          Limited Liability</i
+                        >
+                      </p>
+                    </div>
+                    <div class="col">
+                      <p>
+                        <i class="ri-checkbox-circle-fill">
+                          Separate Legal Entity</i
+                        >
+                      </p>
+                    </div>
+                    <div class="col">
+                      <p>
+                        <i class="ri-checkbox-circle-fill">
+                          Perpetual Succession</i
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="consultation-form-card">
+              <form id="consultation-form" class="consultation-form">
+                <div class="mb-3">
+                  <button type="submit" class="btn btn-book w-100">
+                    Register Your <br />
+                    Private Limited Company
+                  </button>
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="yourname"
+                    name="yourname"
+                    placeholder="Your Name*"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Your Email*"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="tel"
+                    class="form-control"
+                    placeholder="Your Phone*"
+                    required
+                  />
+                </div>
+                <button type="submit" class="btn btn-book w-100">
+                  Book Free Consultation
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <section class="benefits-section terms-card py-5">
+          <div class="container">
+            <div class="section-block">
+              <h2 class="section-title mb-4">
+                Why Choose Our Website Development Services?
+              </h2>
+
+              <div class="documents-list">
+                <div class="document-item mb-4">
+                  <ul>
+                    <li>
+                      At Bharatedge services, we pride ourselves on delivering
+                      tailored <strong>website development</strong> solutions
+                      that cater to the unique needs of your business. Here are
+                      a few reasons why businesses choose us:
+                      <ul>
+                        <li>
+                          <strong>Expert Team:</strong> Our experienced
+                          developers specialize in various technologies,
+                          including
+                          <strong>WordPress website development</strong>,
+                          <strong>custom website development</strong>, and
+                          <strong>ecommerce website development</strong>.
+                        </li>
+                        <li>
+                          <strong>Custom Solutions:</strong> Every business is
+                          different, which is why we offer personalized
+                          solutions to ensure your website stands out.
+                        </li>
+                        <li>
+                          <strong>SEO-Optimized Design:</strong> We build
+                          websites that are not only beautiful but also
+                          optimized for search engines, ensuring better
+                          visibility and ranking.
+                        </li>
+                        <li>
+                          <strong>Responsive and Scalable:</strong> Your website
+                          will look great and function flawlessly on any device,
+                          and it’s designed to grow with your business.
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="section-block">
+              <h2 class="section-title mb-4">
+                Comprehensive Website Development Services
+              </h2>
+
+              <div class="documents-list">
+                <div class="document-item mb-4">
+                  <ol>
+                    <li>
+                      <strong>Custom Website Development</strong>
+                      <ul>
+                        <li>
+                          Our
+                          <strong>custom website development</strong> services
+                          focus on creating unique, feature-rich websites that
+                          perfectly align with your brand and objectives.
+                          Whether you need a simple informational site or a
+                          complex web application, our team can bring your
+                          vision to life.
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <b>Ecommerce Website Development</b>
+                      <ul>
+                        <li>
+                          Unlock the potential of online selling with our
+                          <strong>ecommerce website development</strong>
+                          services. We build robust ecommerce platforms that
+                          provide a seamless shopping experience for your
+                          customers.
+                        </li>
+                        <li>
+                          <strong>Features of Our Ecommerce Solutions:</strong>
+                          <ul>
+                            <li>Intuitive product catalogs.</li>
+                            <li>Secure payment gateways.</li>
+                            <li>Mobile-optimized design.</li>
+                            <li>Advanced analytics and reporting tools.</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <strong>WordPress Website Development</strong>
+                      <ul>
+                        <li>
+                          WordPress is one of the most popular and versatile
+                          platforms for building websites. Our
+                          <strong>WordPress website development</strong>services
+                          leverage the platform’s flexibility to create
+                          professional, functional, and aesthetically pleasing
+                          websites.
+                        </li>
+                        <li>
+                          <strong>Why Choose WordPress</strong>
+                          <ul>
+                            <li>Easy content management.</li>
+                            <li>Wide range of themes and plugins.</li>
+                            <li>SEO-friendly structure.</li>
+                            <li>Scalability for future growth.</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <strong>Our Proven Website Development Process</strong>
+                      <ul>
+                        <li>
+                          At Bharatedge services, we follow a proven process to
+                          ensure the success of every project:
+                          <ol>
+                            <li>
+                              <strong>Discovery and Planning:</strong> We begin
+                              by understanding your business needs, target
+                              audience, and goals.
+                            </li>
+                            <li>
+                              <strong>Design and Prototyping:</strong> Our
+                              design team creates wireframes and mockups that
+                              reflect your vision.
+                            </li>
+                            <li>
+                              <strong>Development:</strong> Our developers bring
+                              the design to life using the latest technologies
+                              and best practices.
+                            </li>
+                            <li>
+                              <strong>Testing and Quality Assurance:</strong> We
+                              thoroughly test your website to ensure it is
+                              bug-free and performs flawlessly.
+                            </li>
+                            <li>
+                              <strong>Launch and Support:</strong> Once your
+                              website is live, we provide ongoing support and
+                              maintenance to keep it running smoothly.
+                            </li>
+                          </ol>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <strong
+                        >Benefits of Partnering with a Website Development
+                        Agency</strong
+                      >
+                      <ul>
+                        <li>
+                          Collaborating with a professional
+                          <strong>website development agency</strong> like
+                          Bharatedge services offers numerous advantages:
+                        </li>
+                        <li>
+                          <strong>Access to Expertise:</strong> Our team stays
+                          updated on the latest trends and technologies.
+                        </li>
+                        <li>
+                          <strong>Time and Cost Efficiency:</strong> We handle
+                          the technical complexities, allowing you to focus on
+                          your core business.
+                        </li>
+                        <li>
+                          <strong>Holistic Approach:</strong> From design to
+                          SEO, we provide a comprehensive solution.
+                        </li>
+                        <li>
+                          <strong>Scalable Solutions:</strong> We create
+                          websites that grow with your business.
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <strong
+                        >Elevate Your Online Store with Ecommerce Website
+                        Development</strong
+                      >
+                      <ul>
+                        <li>
+                          In the competitive world of ecommerce, having a
+                          well-designed and functional website is crucial.
+                          Our<strong>ecommerce website development</strong>
+                          services are tailored to create an online store that
+                          not only attracts customers but also converts them
+                          into loyal buyers.
+                        </li>
+                        <li>
+                          <strong
+                            >Why Our Ecommerce Solutions Stand Out:</strong
+                          >
+                          <ul>
+                            <li>
+                              <strong>User-Friendly Navigation:</strong> Ensures
+                              a seamless shopping experience.
+                            </li>
+                            <li>
+                              <strong>Secure Transactions:</strong> Protects
+                              customer data and builds trust.
+                            </li>
+                            <li>
+                              <strong>Customizable Features:</strong> Offers
+                              flexibility to meet your business needs.
+                            </li>
+                            <li>
+                              <strong>Performance Optimization:</strong> Ensures
+                              fast loading times and high uptime.
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <strong
+                        >The Importance of SEO in Website Development</strong
+                      >
+                      <ul>
+                        <li>
+                          Building a website is just the first step. To ensure
+                          it reaches your target audience, SEO is critical.
+                          Our<strong>website development agency</strong>
+                          integrates SEO best practices into every project:
+                        </li>
+                        <li>
+                          <strong>Keyword Optimization:</strong> We identify and
+                          implement relevant keywords like “<strong
+                            >website development services</strong
+                          >, “<strong>custom website development</strong>,” and
+                          “<strong>WordPress website development</strong>” to
+                          improve visibility.
+                        </li>
+                        <li>
+                          <strong>Technical SEO:</strong> From site speed to
+                          mobile responsiveness, we ensure your site is
+                          technically sound.
+                        </li>
+                        <li>
+                          <strong>Content Strategy:</strong> Our team crafts
+                          compelling, keyword-rich content to engage users and
+                          boost rankings.
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <strong
+                        >Affordable and Reliable Website Development
+                        Agency</strong
+                      >
+                      <ul>
+                        <li>
+                          Looking for a reliable partner for<strong
+                            >website development</strong
+                          >without breaking the bank? Bharatedge services offers
+                          competitive pricing without compromising on quality.
+                          Whether you need<strong
+                            >custom website development</strong
+                          >
+                          or <strong>WordPress website development</strong>, we
+                          deliver exceptional results within your budget.
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <strong
+                        >Get Started with Our Website Development Services
+                        Today</strong
+                      >
+                      <ul>
+                        <li>
+                          Don’t let your business fall behind in the digital
+                          age. Partner with Bharatedge services, a
+                          leading<strong>website development agency</strong>, to
+                          create a website that drives results. Whether you’re
+                          looking for<strong>custom website development</strong
+                          >,<strong>ecommerce website development</strong>,
+                          or<strong>WordPress website development</strong>, we
+                          have the expertise to make your project a success.
+                        </li>
+                      </ul>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="py-5 container">
+      <div class="disclaimer-section" data-aos="fade-up">
+        <p class="disclaimer-text">
+          <strong>Disclaimer :</strong> We provide consultancy services.
+          Approval is subject to the Terms and Conditions as per the applicable
+          Scheme/Programme.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer text-white">
+      <div class="container py-4">
+        <div class="row g-4">
+          <div class="col-lg-3">
+            <img
+              src="../img/logo-ss.png"
+              alt=" Startup Savera Logo"
+              width="220"
+              class="mb-2"
+            />
+            <p class="mb-0">
+              Your trusted partner in business solutions. We help businesses
+              grow through innovative strategies and proven results.
+            </p>
+          </div>
+          <div class="col-lg-3 justify-content-center align-items-center">
+            <h5 class="mb-3">Quick Links</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">
+                <a href="./index.html" class="text-white">Home</a>
+              </li>
+              <li class="mb-2">
+                <a href="./about.html" class="text-white">About Us</a>
+              </li>
+              <li class="mb-2">
+                <a href="../services/services.html" class="text-white"
+                  >Services</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="./partners.html" class="text-white">Partners</a>
+              </li>
+              <li><a href="./contact.html" class="text-white">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="mb-3">Our Services</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">
+                <a href="#" class="text-white">Aarambh</a>
+              </li>
+              <li class="mb-2">
+                <a
+                  href="../services/services.html"
+                  target="kavach"
+                  class="text-white"
+                  >Kavach</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white">Pramanit</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white">Nidhi</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white">Vikas</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="mb-3">Connect With Us</h5>
+            <div class="social-links mb-3">
+              <a
+                href="https://www.facebook.com/people/Startup-Savera/61574920799218/"
+                class="text-white me-3"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://x.com/startupsavera" class="text-white me-3"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/company/startup-savera-services/"
+                class="text-white me-3"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/startupsavera_/?utm_source=ig_web_button_share_sheet"
+                class="text-white"
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+            <p class="mb-1">
+              <i class="fas fa-phone"></i>
+              <a href="tel:+91 93512 62184"> +91 93512 62184 </a>
+            </p>
+            <p class="mb-0">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:support@startupsavera.com" target="_blank"
+                >support@startupsavera.com</a
+              >
+            </p>
+          </div>
+        </div>
+        <hr class="my-3" />
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <p class="mb-0 text-center text-lg-start">
+              &copy; <a href="#">Startup Savera</a> All Rights Reserved.
+              Designed by
+              <a
+                href="http://www.trendtwistr.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Trendtwistr</a
+              >
+            </p>
+          </div>
+          <div class="col-lg-6 text-center text-lg-end">
+            <a href="terms.html" class="text-white me-3">Terms & Conditions</a>
+            <a href="privacy.html" class="text-white">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100,
+        easing: "ease-in-out",
+      });
+    </script>
+  </body>
+</html>
