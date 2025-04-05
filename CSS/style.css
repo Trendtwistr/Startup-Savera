@@ -2801,3 +2801,7 @@ article:has(:hover, :focus) {
   white-space: nowrap;
   width: 1px;
 }
+
+section h1{
+  color: var(--accent-color);
+}
