@@ -1019,7 +1019,6 @@ img {
 .about-hero-section img {
   transform: perspective(1000px) rotateY(-15deg);
   transition: transform 0.5s ease;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .hero-section img {
@@ -1031,7 +1030,6 @@ img {
 .partners-hero-section img {
   transform: perspective(1000px) rotateY(-15deg);
   transition: transform 0.5s ease;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .about-hero-section img:hover {
