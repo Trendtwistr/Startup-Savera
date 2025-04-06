@@ -348,6 +348,12 @@ img {
   color: white;
 }
 
+.btn-main:hover {
+  background: var(--accent-color);
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
 /* Hero Section */
 .hero-section {
   padding: 60px 0 50px;
@@ -1057,7 +1063,7 @@ img {
 
 .company-intro img {
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); */
   transition: transform 0.3s ease;
 }
 
@@ -1212,7 +1218,7 @@ img {
 
 .expertise-section img {
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); */
   transition: transform 0.3s ease;
 }
 
