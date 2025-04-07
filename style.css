@@ -2811,8 +2811,6 @@ article:has(:hover, :focus) {
 section h1 {
   color: var(--accent-color);
 }
-
-.service-card {
   background: var(--light-bg);
   border-radius: 20px;
   padding: 30px;
@@ -2929,4 +2927,4 @@ section h1 {
   background-color: var(--primary-color);
   color: white;
   font-weight: 600;
-}
+} */
