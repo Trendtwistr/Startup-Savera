@@ -2808,6 +2808,125 @@ article:has(:hover, :focus) {
   width: 1px;
 }
 
-section h1{
+section h1 {
   color: var(--accent-color);
+}
+
+.service-card {
+  background: var(--light-bg);
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.20);
+}
+
+.service-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.service-card .card-body {
+  text-align: center;
+  padding: 0;
+}
+
+.service-card .card-title {
+  color: #333;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.service-card .btn-main {
+  background: var(--primary-color);
+  color: var(--light-bg);
+  padding: 12px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  font-weight: 500;
+  margin-top: auto;
+}
+
+.service-card .btn-main:hover {
+  background: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+.service-tabs {
+  background: var(--ligth-accent);
+  border-radius: 10px;
+  padding: 15px;
+  margin: 30px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.service-tab {
+  padding: 12px 15px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #6c757d;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  margin: 5px;
+  text-align: center;
+  background: var(--light-bg);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.service-tab:hover {
+  background: var(--light-bg);
+  color: var(--text-color);
+}
+
+.service-tab.active {
+  background: var(--primary-color);
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #343a40;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #6c757d;
+  margin-bottom: 40px;
+}
+
+.service-tab {
+  background-color: #f8f9fa;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.service-tab:hover {
+  background-color: #e9ecef;
+  transform: translateY(-2px);
+}
+
+.service-tab.active {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 600;
 }

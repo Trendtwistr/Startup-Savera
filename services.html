@@ -19,6 +19,110 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .service-card {
+      background: white;
+      border-radius: 20px;
+      padding: 30px;
+      text-align: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .service-card img {
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+      margin-bottom: 20px;
+    }
+
+    .service-card .card-body {
+      text-align: center;
+      padding: 0;
+    }
+
+    .service-card .card-title {
+      color: #333;
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .service-card .btn-main {
+      background: #003399;
+      color: white;
+      padding: 12px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-block;
+      font-weight: 500;
+      margin-top: auto;
+    }
+
+    .service-card .btn-main:hover {
+      background: #002266;
+      transform: translateY(-2px);
+    }
+
+    .service-tabs {
+      background: #f8f9fa;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 30px 0;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .service-tab {
+      padding: 12px 15px;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #6c757d;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      margin: 5px;
+      text-align: center;
+      background: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .service-tab:hover {
+      background: #e9ecef;
+      color: #495057;
+    }
+
+    .service-tab.active {
+      background: #007bff;
+      color: white;
+      box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+      color: #343a40;
+    }
+
+    .section-subtitle {
+      font-size: 1.2rem;
+      color: #6c757d;
+      margin-bottom: 40px;
+    }
+  </style>
 </head>
 
 <body>
@@ -181,111 +285,114 @@
   </section>
 
   <!-- Service Category Tabs -->
-  <section class="py-5">
+  <section class="py-5 bg-light">
     <div class="container">
-      <div class="row text-center service-tabs">
-        <div class="col-6 col-md-2 service-tab active" data-target="prarambh">
-          prarambh
+      <div class="row justify-content-center text-center g-3">
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="service-tab active py-3 px-2 rounded shadow-sm" data-target="prarambh">
+            Prarambh
+          </div>
         </div>
-        <div class="col-6 col-md-2 service-tab" data-target="suraksha">
-          suraksha
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="service-tab py-3 px-2 rounded shadow-sm" data-target="suraksha">
+            Suraksha
+          </div>
         </div>
-        <div class="col-6 col-md-2 service-tab" data-target="satyapit">
-          satyapit
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="service-tab py-3 px-2 rounded shadow-sm" data-target="satyapit">
+            Satyapit
+          </div>
         </div>
-        <div class="col-6 col-md-2 service-tab" data-target="sampatti">
-          sampatti
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="service-tab py-3 px-2 rounded shadow-sm" data-target="sampatti">
+            Sampatti
+          </div>
         </div>
-        <div class="col-6 col-md-2 service-tab" data-target="unnati">
-          unnati
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="service-tab py-3 px-2 rounded shadow-sm" data-target="unnati">
+            Unnati
+          </div>
         </div>
-        <div class="col-6 col-md-2 service-tab" data-target="prasar">
-          prasar
-                    </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="service-tab py-3 px-2 rounded shadow-sm" data-target="prasar">
+            Prasar
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Aarambh Section -->
-  <section id="aarambh" class="py-5 service-section">
+
+  <!-- Service Sections -->
+  <section id="prarambh" class="py-5 service-section">
     <div class="container">
       <div class="text-center mb-5">
-        <h2 class="fw-bold">Aarambh - Start your business</h2>
+        <h2 class="section-title">Prarambh - Start your business</h2>
       </div>
-      <div class="row">
-        <!-- Service Card 1 -->
-        <div class="col-md-4 mb-4">
+      <div class="row g-4">
+        <!-- Private Limited Company -->
+        <div class="col-md-4">
           <div class="service-card">
-            <img src="../img/Main/private_limited_company_registration.svg" alt="Private Limited Company" />
+            <img src="../img/Main/private_limited_company_registration.svg"
+              alt="Private Limited Company Registration" />
             <div class="card-body">
               <h5 class="card-title">Private Limited Company Registration</h5>
-              <a href="#" class="btn btn-main">Know More</a>
+              <a href="../services/private-limited-company.html" class="btn btn-main">Know More</a>
             </div>
           </div>
         </div>
 
-        <!-- Service Card 2 -->
-        <div class="col-md-4 mb-4">
+        <!-- One Person Company -->
+        <div class="col-md-4">
           <div class="service-card">
-            <img src="../img/Main/one_person_company_registration.svg" alt="One Person Company" />
+            <img src="../img/Main/one_person_company_registration.svg" alt="One Person Company Registration" />
             <div class="card-body">
               <h5 class="card-title">One Person Company Registration</h5>
-              <a href="#" class="btn btn-main">Know More</a>
+              <a href="../services/one_person_company_registration.html" class="btn btn-main">Know More</a>
             </div>
           </div>
         </div>
 
-        <!-- Service Card 3 -->
-        <div class="col-md-4 mb-4">
+        <!-- Limited Liability Partnership -->
+        <div class="col-md-4">
           <div class="service-card">
             <img src="../img/Main/limited_liability_partnership.svg" alt="Limited Liability Partnership" />
             <div class="card-body">
               <h5 class="card-title">Limited Liability Partnership</h5>
-              <a href="#" class="btn btn-main">Know More</a>
+              <a href="../services/llp-company-registration.html" class="btn btn-main">Know More</a>
             </div>
           </div>
         </div>
 
-        <!-- Service Card 4 -->
-        <div class="col-md-4 mb-4">
+        <!-- Partnership Firm Registration -->
+        <div class="col-md-4">
           <div class="service-card">
             <img src="../img/Main/partnership_firm_registration.svg" alt="Partnership Firm Registration" />
             <div class="card-body">
               <h5 class="card-title">Partnership Firm Registration (ROF)</h5>
-              <a href="#" class="btn btn-main">Know More</a>
+              <a href="../services/partnership-firm-registration.html" class="btn btn-main">Know More</a>
             </div>
           </div>
         </div>
 
-        <!-- Service Card 5 -->
-        <div class="col-md-4 mb-4">
+        <!-- Section 8 Company -->
+        <div class="col-md-4">
           <div class="service-card">
             <img src="../img/Main/section_8_company.svg" alt="Section 8 Company" />
             <div class="card-body">
               <h5 class="card-title">Section 8 Company</h5>
-              <a href="#" class="btn btn-main">Know More</a>
+              <a href="../services/section-8-company-registration.html" class="btn btn-main">Know More</a>
             </div>
           </div>
         </div>
 
-        <!-- Service Card 6 -->
-        <div class="col-md-4 mb-4">
+        <!-- 12A and 80G Registration -->
+        <div class="col-md-4">
           <div class="service-card">
             <img src="../img/Main/12a_and_80g_registration.svg" alt="12A and 80G Registration" />
             <div class="card-body">
               <h5 class="card-title">12A and 80G Registration</h5>
-              <a href="#" class="btn btn-main">Know More</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Service Card 7 -->
-        <div class="col-md-4 mb-4">
-          <div class="service-card">
-            <img src="../img/Main/nidhi_company_registration.svg" alt="Nidhi Company Registration" />
-            <div class="card-body">
-              <h5 class="card-title">Nidhi Company Registration</h5>
-              <a href="#" class="btn btn-main">Know More</a>
+              <a href="../services/12a-and-80g-registration.html" class="btn btn-main">Know More</a>
             </div>
           </div>
         </div>
@@ -293,31 +400,31 @@
     </div>
   </section>
 
-  <!-- Kavach Section (Hidden by default) -->
-  <section id="kavach" class="py-5 service-section d-none">
+  <!-- Suraksha Section -->
+  <section id="suraksha" class="py-5 service-section d-none">
     <div class="container">
       <div class="text-center mb-5">
-        <h2 class="fw-bold">Kavach - Protect your business</h2>
+        <h2 class="section-title">Suraksha - Protect your business</h2>
       </div>
-      <div class="row">
-        <!-- Service Card 1 -->
-        <div class="col-md-4 mb-4">
+      <div class="row g-4">
+        <!-- Shram Suvidha Registration -->
+        <div class="col-md-4">
           <div class="service-card">
             <img src="../img/Main/shram_suvidha_registration.svg" alt="Shram Suvidha Registration" />
             <div class="card-body">
               <h5 class="card-title">Shram Suvidha Registration</h5>
-              <a href="#" class="btn btn-main">Know More</a>
+              <a href="../services/shram-suvidha-registration.html" class="btn btn-main">Know More</a>
             </div>
           </div>
         </div>
 
-        <!-- Service Card 2 -->
-        <div class="col-md-4 mb-4">
+        <!-- Trademark Registration -->
+        <div class="col-md-4">
           <div class="service-card">
             <img src="../img/Main/trademark_registration.svg" alt="Trademark Registration" />
             <div class="card-body">
               <h5 class="card-title">Trademark Registration</h5>
-              <a href="#" class="btn btn-main">Know More</a>
+              <a href="../services/trademark-registration.html" class="btn btn-main">Know More</a>
             </div>
           </div>
         </div>
@@ -325,54 +432,6 @@
     </div>
   </section>
 
-  <!-- Pramanit Section (Hidden by default) -->
-  <section id="pramanit" class="py-5 service-section d-none">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h2 class="fw-bold">Pramanit - Get certified</h2>
-      </div>
-      <div class="row">
-        <!-- Add service cards for Pramanit section -->
-        <!-- You can copy the structure from above sections -->
-      </div>
-    </div>
-  </section>
-
-  <!-- Nidhi Section (Hidden by default) -->
-  <section id="nidhi" class="py-5 service-section d-none">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h2 class="fw-bold">Nidhi - Fund your business</h2>
-      </div>
-      <div class="row">
-        <!-- Add service cards for Nidhi section -->
-      </div>
-    </div>
-  </section>
-
-  <!-- Vikas Section (Hidden by default) -->
-  <section id="vikas" class="py-5 service-section d-none">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h2 class="fw-bold">Vikas - Grow your business</h2>
-      </div>
-      <div class="row">
-        <!-- Add service cards for Vikas section -->
-      </div>
-    </div>
-  </section>
-
-  <!-- Vistar Section (Hidden by default) -->
-  <section id="vistar" class="py-5 service-section d-none">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h2 class="fw-bold">Vistar - Expand your business</h2>
-      </div>
-      <div class="row">
-        <!-- Add service cards for Vistar section -->
-      </div>
-    </div>
-  </section>
 
   <!-- Footer -->
   <footer class="footer text-white">
@@ -468,12 +527,11 @@
     </a>
   </div>
 
+
   <!-- Bootstrap JS Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-  <!-- jQuery (for tab functionality) -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!-- AOS JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -482,39 +540,65 @@
     AOS.init();
 
     // Service tab functionality
-    $(document).ready(function () {
-      $(".service-tab").click(function () {
-        // Update active tab
-        $(".service-tab").removeClass("active");
-        $(this).addClass("active");
+    document.addEventListener("DOMContentLoaded", function () {
+      // Get all tabs and sections
+      const tabs = document.querySelectorAll(".service-tab");
+      const sections = document.querySelectorAll(".service-section");
+      const footerLinks = document.querySelectorAll(".service-link");
 
-        // Show corresponding section
-        var target = $(this).data("target");
-        $(".service-section").addClass("d-none");
-        $("#" + target).removeClass("d-none");
-      });
+      // Function to switch tabs
+      function switchTab(targetId) {
+        // Update active state of tabs
+        tabs.forEach((tab) => {
+          if (tab.getAttribute("data-target") === targetId) {
+            tab.classList.add("active");
+          } else {
+            tab.classList.remove("active");
+          }
+        });
 
-      // Service links in footer
-      $(".service-link").click(function (e) {
-        e.preventDefault();
-        var target = $(this).data("target");
-
-        // Update active tab
-        $(".service-tab").removeClass("active");
-        $(".service-tab[data-target='" + target + "']").addClass("active");
-
-        // Show corresponding section
-        $(".service-section").addClass("d-none");
-        $("#" + target).removeClass("d-none");
+        // Show/hide sections
+        sections.forEach((section) => {
+          if (section.id === targetId) {
+            section.classList.remove("d-none");
+          } else {
+            section.classList.add("d-none");
+          }
+        });
 
         // Scroll to section
-        $("html, body").animate(
-          {
-            scrollTop: $("#" + target).offset().top - 100,
-          },
-          500
-        );
+        const section = document.getElementById(targetId);
+        if (section) {
+          window.scrollTo({
+            top: section.offsetTop - 100,
+            behavior: "smooth",
+          });
+        }
+      }
+
+      // Add click event to tabs
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", function () {
+          const targetId = this.getAttribute("data-target");
+          switchTab(targetId);
+        });
       });
+
+      // Add click event to footer links
+      footerLinks.forEach((link) => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("data-target");
+          switchTab(targetId);
+        });
+      });
+
+      // Show first section by default
+      if (tabs.length > 0) {
+        const firstTab = tabs[0];
+        const firstTarget = firstTab.getAttribute("data-target");
+        switchTab(firstTarget);
+      }
     });
   </script>
 </body>
