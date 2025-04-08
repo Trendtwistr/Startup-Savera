@@ -182,7 +182,7 @@
           </div>
         </div>
         <div class="col-lg-6 py-4">
-          <img src="../img/Main/founders.svg" alt="Business Growth"  sizes="(max-width: 768px) 100vw, 50vw" width="600"
+          <img src="../img/Main/founders.svg" alt="Business Growth" sizes="(max-width: 768px) 100vw, 50vw" width="600"
             height="400" fetchpriority="high" />
         </div>
       </div>
@@ -535,40 +535,122 @@
         </div>
         <div class="col-lg-6">
           <div class="consultation-form-card">
-            <form class="consultation-form">
+            <form id="contactForm" method="post" class="consultation-form">
               <div class="mb-3">
-                <input type="text" class="form-control" id="yourname" name="yourname" placeholder="Your Name*"
-                  required />
+                <input type="text" class="form-control" id="name-1" name="name-1" placeholder="Enter Your Full Name"
+                  required>
               </div>
               <div class="mb-3">
-                <input type="email" class="form-control" placeholder="Your Email*" required />
+                <input type="tel" class="form-control" id="phone-1" name="phone-1"
+                  placeholder="Enter Your Mobile Number" maxlength="10" required>
               </div>
               <div class="mb-3">
-                <input type="tel" class="form-control" placeholder="Your Phone*" required />
+                <input type="email" class="form-control" id="email-1" name="email-1" placeholder="Enter Your Email">
               </div>
               <div class="mb-3">
-                <select class="form-select" required>
-                  <option value="" selected disabled>Select Service*</option>
-                  <option value="prarambh">
-                    Prarambh - Start Strong, Grow Smart
-                  </option>
-                  <option value="suraksha">
-                    Suraksha - Protect What You Build
-                  </option>
-                  <option value="satyapit">Satyapit - Certification Made Simple</option>
-                  <option value="sampatti">Sampatti - Get Funded, Get Growing</option>
-                  <option value="unnati">Unnati - Growth Without Limits</option>
-                  <option value="prasar">
-                    Prasar - Power Up Your Business
-                  </option>
+                <select class="form-select" id="select-1" name="select-1" required>
+                  <option value="">Select Service Category</option>
+                  <option value="one">Prarambh - Start your Business</option>
+                  <option value="two">Suraksha - Protect your business</option>
+                  <option value="three">Satyapit - Get certified</option>
+                  <option value="four">Sampatti - Fund your Business</option>
+                  <option value="five">Unnati - Grow your business</option>
+                  <option value="six">Prasar - Power Up Your Business</option>
+                </select>
+
+              </div>
+              <div class="mb-3" id="prarambh-services" style="display:none;">
+                <label for="select-2" class="form-label">Prarambh Services <span class="text-danger">*</span></label>
+                <select class="form-select" id="select-2" name="select-2" required>
+                  <option value="">Select Your Service</option>
+                  <option value="Private Limited Company">Private Limited Company</option>
+                  <option value="Public Limited Company">Public Limited Company</option>
+                  <option value="Limited Liability Partnership">Limited Liability Partnership</option>
+                  <option value="Partnership Firm Registration (ROF)">Partnership Firm Registration (ROF)</option>
+                  <option value="Section 8 Company">Section 8 Company</option>
+                  <option value="12A and 80G Registration">12A and 80G Registration</option>
+                  <option value="Non Profit Company Registration">Non Profit Company Registration</option>
+                  <option value="Nidhi Company Registration">Nidhi Company Registration</option>
                 </select>
               </div>
-              <div class="mb-3">
-                <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+              <div class="mb-3" id="suraksha-services" style="display:none;">
+                <label for="select-3" class="form-label">Suraksha Services <span class="text-danger">*</span></label>
+                <select class="form-select" id="select-3" name="select-3" required>
+                  <option value="">Select Your Service</option>
+                  <option value="NGO Darpan Registration">NGO Darpan Registration</option>
+                  <option value="Trademark Registration">Trademark Registration</option>
+                  <option value="Shram Suvidha Registration">Shram Suvidha Registration</option>
+                  <option value="Organic Registration">Organic Registration</option>
+                  <option value="ISI Registration">ISI Registration</option>
+                  <option value="BIS Registration">BIS Registration</option>
+                  <option value="BEE Registration">BEE Registration</option>
+                  <option value="APEDA Registration">APEDA Registration</option>
+                  <option value="RERA Registration">RERA Registration</option>
+                  <option value="Patent Registration">Patent Registration</option>
+                  <option value="Copyright Registration">Copyright Registration</option>
+                </select>
               </div>
-              <button type="submit" class="btn btn-main w-100">
-                Book Free Consultation
-              </button>
+              <div class="mb-3" id="satyapit-services" style="display:none;">
+                <label for="select-4" class="form-label">Satyapit Services <span class="text-danger">*</span></label>
+                <select class="form-select" id="select-4" name="select-4" required>
+                  <option value="">Select Your Service</option>
+                  <option value="Tax Exemption Certificate">Tax Exemption Certificate</option>
+                  <option value="GeM Certificate">GeM Certificate</option>
+                  <option value="ZED Certificate">ZED Certificate</option>
+                  <option value="ISO Certificate">ISO Certificate</option>
+                  <option value="GST Registration &amp; Certificate">GST Registration &amp; Certificate</option>
+                  <option value="FSSAI Certificate">FSSAI Certificate</option>
+                  <option value="IEC Certificate">IEC Certificate</option>
+                  <option value="CE Certificate">CE Certificate</option>
+                  <option value="BIS Certificate">BIS Certificate</option>
+                  <option value="Gumasta Certificate">Gumasta Certificate</option>
+                  <option value="BIFMA Certification">BIFMA Certification</option>
+                  <option value="NSIC">NSIC</option>
+                  <option value="APEDA Certificate">APEDA Certificate</option>
+                  <option value="Organic Certification">Organic Certification</option>
+                  <option value="Halal Certification">Halal Certification</option>
+                  <option value="FEMA Certification">FEMA Certification</option>
+                  <option value="BIS Certification For Toys">BIS Certification For Toys</option>
+                  <option value="ROHS Compliance Certificate">ROHS Compliance Certificate</option>
+                  <option value="Udyog Aadhar">Udyog Aadhar</option>
+                  <option value="START-UP India Certificate">START-UP India Certificate</option>
+                </select>
+              </div>
+              <div class="mb-3" id="sampatti-services" style="display:none;">
+                <label for="select-5" class="form-label">Sampatti Services <span class="text-danger">*</span></label>
+                <select class="form-select" id="select-5" name="select-5" required>
+                  <option value="">Select Your Service</option>
+                  <option value="Government Grants And Funding">Government Grants And Funding</option>
+                  <option value="CGTMSE">CGTMSE</option>
+                  <option value="Venture Capital">Venture Capital</option>
+                  <option value="Seed Money">Seed Money</option>
+                </select>
+              </div>
+              <div class="mb-3" id="unnati-services" style="display:none;">
+                <label for="select-6" class="form-label">Unnati Services <span class="text-danger">*</span></label>
+                <select class="form-select" id="select-6" name="select-6" required>
+                  <option value="">Select Your Service</option>
+                  <option value="Project Financing">Project Financing</option>
+                  <option value="Machinery Loan">Machinery Loan</option>
+                  <option value="Green Field Loan">Green Field Loan</option>
+                  <option value="Working Capital">Working Capital</option>
+                  <option value="Business Loan">Business Loan</option>
+                  <option value="Line Of Credit">Line Of Credit</option>
+                  <option value="MSME Loan">MSME Loan</option>
+                  <option value="PMEGP Loan">PMEGP Loan</option>
+                  <option value="MUDRA Loan">MUDRA Loan</option>
+                </select>
+              </div>
+              <div class="mb-3" id="prasar-services" style="display:none;">
+                <label for="select-7" class="form-label">Prasar Services <span class="text-danger">*</span></label>
+                <select class="form-select" id="select-5" name="select-5" required>
+                  <option value="">Select Your Service</option>
+                  <option value="Government Grants And Funding">Logo Design</option>
+                  <option value="CGTMSE">Digital Marketing</option>
+                  <option value="Venture Capital">Website Development</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-main w-100">Send Message</button>
             </form>
           </div>
         </div>
@@ -668,22 +750,54 @@
   </footer>
 
   <!-- WhatsApp Chat Button -->
-<div class="position-fixed bottom-0 end-0 mb-4 me-4 z-1030">
-  <a 
-    href="https://wa.me/9351262184" 
-    class="btn btn-success p-3 border-0 rounded-circle shadow"
-    style="background-color: #25d366;" 
-    target="_blank" 
-    rel="noopener noreferrer"
-    aria-label="Chat with us on WhatsApp">
-    <i class="fab fa-whatsapp fa-2x" aria-hidden="true"></i>
-  </a>
-</div>
+  <div class="position-fixed bottom-0 end-0 mb-4 me-4 z-1030">
+    <a href="https://wa.me/9351262184" class="btn btn-success p-3 border-0 rounded-circle shadow"
+      style="background-color: #25d366;" target="_blank" rel="noopener noreferrer"
+      aria-label="Chat with us on WhatsApp">
+      <i class="fab fa-whatsapp fa-2x" aria-hidden="true"></i>
+    </a>
+  </div>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const serviceCategory = document.getElementById('select-1');
+      const prarambhServices = document.getElementById('prarambh-services');
+      const surakshaServices = document.getElementById('suraksha-services');
+      const satyapitServices = document.getElementById('satyapit-services');
+      const sampattiServices = document.getElementById('sampatti-services');
+      const unnatiServices = document.getElementById('unnati-services');
+      const prasarServices = document.getElementById('prasar-services');
+
+      function updateServiceDropdowns(selectedCategory) {
+        prarambhServices.style.display = selectedCategory === 'one' ? 'block' : 'none';
+        surakshaServices.style.display = selectedCategory === 'two' ? 'block' : 'none';
+        satyapitServices.style.display = selectedCategory === 'three' ? 'block' : 'none';
+        sampattiServices.style.display = selectedCategory === 'four' ? 'block' : 'none';
+        unnatiServices.style.display = selectedCategory === 'five' ? 'block' : 'none';
+        prasarServices.style.display = selectedCategory === 'six' ? 'block' : 'none';
+
+        // Optionally reset the values of the hidden dropdowns
+        if (selectedCategory !== 'one') document.getElementById('select-2').selectedIndex = 0;
+        if (selectedCategory !== 'two') document.getElementById('select-3').selectedIndex = 0;
+        if (selectedCategory !== 'three') document.getElementById('select-4').selectedIndex = 0;
+        if (selectedCategory !== 'four') document.getElementById('select-5').selectedIndex = 0;
+        if (selectedCategory !== 'five') document.getElementById('select-6').selectedIndex = 0;
+        if (selectedCategory !== 'six') document.getElementById('select-6').selectedIndex = 0;
+      }
+
+      serviceCategory.addEventListener('change', function () {
+        updateServiceDropdowns(this.value);
+      });
+
+      // Initialize on page load in case a category is pre-selected (though unlikely with this basic HTML)
+      updateServiceDropdowns(serviceCategory.value);
+    });
+  </script>
 
   <script defer>
     document.addEventListener("DOMContentLoaded", function () {
