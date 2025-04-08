@@ -21,7 +21,7 @@
 }
 
 body {
-  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: var(--text-color);
   line-height: 1.6;
   overflow-x: hidden;
@@ -2811,18 +2811,19 @@ article:has(:hover, :focus) {
 section h1 {
   color: var(--accent-color);
 }
-  background: var(--light-bg);
-  border-radius: 20px;
-  padding: 30px;
-  text-align: center;
-  transition: all 0.3s ease;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 30px;
-}
+
+/* background: var(--light-bg);
+border-radius: 20px;
+padding: 30px;
+text-align: center;
+transition: all 0.3s ease;
+box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 30px;
+} */
 
 .service-card:hover {
   transform: translateY(-5px);
@@ -2894,7 +2895,7 @@ section h1 {
 }
 
 .service-tab.active {
-  background: var(--primary-color);
+  background: var(--secondary-color);
   color: white;
   box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
 }
@@ -2927,4 +2928,6 @@ section h1 {
   background-color: var(--primary-color);
   color: white;
   font-weight: 600;
-} */
+}
+
+*/
