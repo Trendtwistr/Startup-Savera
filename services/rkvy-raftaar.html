@@ -22,9 +22,10 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- logo design Icon for website -->
-    <link rel="shortcut icon" href="./img/icon/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/icon/favicon.svg" type="image/x-icon">
 
-    <link rel="stylesheet" href="style.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
 
 <body>
@@ -506,6 +507,19 @@
     <!-- AOS Script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        fetch("../components/navbar.html")
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error("Network response was not ok " + response.statusText);
+                }
+                return response.text();
+            })
+            .then((data) => {
+                document.getElementById("navbar").innerHTML = data;
+            })
+            .catch((error) => {
+                console.error("There was a problem with the fetch operation:", error);
+            });
         AOS.init({
             duration: 1000,
             once: true,

@@ -2904,7 +2904,7 @@ margin-bottom: 30px;
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 30px;
-  color: #343a40;
+  color: var(--primary-color);
 }
 
 .section-subtitle {
@@ -2931,57 +2931,83 @@ margin-bottom: 30px;
 }
 
 
-  /* --- Styling for the form inside the Magnific Popup --- */
-        /* Magnific Popup adds the 'mfp-content' wrapper */
-        .mfp-content #popup-form-container {
-          display: block !important; /* Override the .d-none */
-          position: relative; /* Crucial for positioning the close button */
-          background-color: white;
-          /* --- OPTIONAL: Adjust padding if needed --- */
-          padding: 1.5rem; /* Example: Reduced padding */
-          padding-top: 3rem; /* Example: Reduced top padding to keep space for close btn */
-          margin: 1rem auto; /* Centering and margin */
-          border-radius: 0.5rem; /* Bootstrap-like radius */
-          /* --- CHANGE THIS VALUE --- */
-          max-width: 450px; /* Make this smaller, e.g., 450px, 500px */
-          max-height: 550px;
-          box-shadow: 0 .5rem 1rem rgba(0,0,0,.15); /* Bootstrap-like shadow */
-     }
- 
-     /* Responsive adjustments for the container inside the popup */
-     @media (max-width: 767.98px) {
-         .mfp-content #popup-form-container {
-             margin: 0.5rem; /* Smaller margin on small screens */
-              /* --- OPTIONAL: Adjust padding for small screens if needed --- */
-             padding: 1rem; /* Example: Further reduced padding */
-             padding-top: 2.5rem; /* Example: Further reduced top padding */
-             /* Optional: You could also set a max-width here if needed */
-             /* max-width: 90vw; / / e.g., ensure it doesn't touch edges */
-         }
-     }
- 
- 
-     /* --- Close Button Styling (Keep as is) --- */
-     .mfp-close {
-         position: absolute !important;
-         top: 10px !important;
-         right: 10px !important;
-         width: 30px !important;
-         height: 30px !important;
-         line-height: 30px !important;
-         text-align: center !important;
-         font-size: 28px !important;
-         font-family: Arial, sans-serif; /* Ensure 'x' renders */
-         color: #6c757d !important; /* Bootstrap secondary color */
-         background: transparent !important;
-         border: none !important;
-         padding: 0 !important;
-         opacity: 0.7;
-         cursor: pointer;
-         z-index: 1046 !important; /* Needs to be high */
-         transition: opacity 0.2s ease;
-     }
-     .mfp-close:hover {
-         opacity: 1;
-     }
-     /* --- End of Custom CSS --- */
+/* --- Styling for the form inside the Magnific Popup --- */
+/* Magnific Popup adds the 'mfp-content' wrapper */
+.mfp-content #popup-form-container {
+  display: block !important;
+  /* Override the .d-none */
+  position: relative;
+  /* Crucial for positioning the close button */
+  background-color: white;
+  /* --- OPTIONAL: Adjust padding if needed --- */
+  padding: 1.5rem;
+  /* Example: Reduced padding */
+  padding-top: 3rem;
+  /* Example: Reduced top padding to keep space for close btn */
+  margin: 1rem auto;
+  /* Centering and margin */
+  border-radius: 0.5rem;
+  /* Bootstrap-like radius */
+  /* --- CHANGE THIS VALUE --- */
+  max-width: 450px;
+  /* Make this smaller, e.g., 450px, 500px */
+  max-height: 550px;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+  /* Bootstrap-like shadow */
+}
+
+/* Responsive adjustments for the container inside the popup */
+@media (max-width: 767.98px) {
+  .mfp-content #popup-form-container {
+    margin: 0.5rem;
+    /* Smaller margin on small screens */
+    /* --- OPTIONAL: Adjust padding for small screens if needed --- */
+    padding: 1rem;
+    /* Example: Further reduced padding */
+    padding-top: 2.5rem;
+    /* Example: Further reduced top padding */
+    /* Optional: You could also set a max-width here if needed */
+    /* max-width: 90vw; / / e.g., ensure it doesn't touch edges */
+  }
+}
+
+
+/* --- Close Button Styling (Keep as is) --- */
+.mfp-close {
+  position: absolute !important;
+  top: 10px !important;
+  right: 10px !important;
+  width: 30px !important;
+  height: 30px !important;
+  line-height: 30px !important;
+  text-align: center !important;
+  font-size: 28px !important;
+  font-family: Arial, sans-serif;
+  /* Ensure 'x' renders */
+  color: #6c757d !important;
+  /* Bootstrap secondary color */
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  opacity: 0.7;
+  cursor: pointer;
+  z-index: 1046 !important;
+  /* Needs to be high */
+  transition: opacity 0.2s ease;
+}
+
+.mfp-close:hover {
+  opacity: 1;
+}
+
+#popup-form-container {
+  display: none;
+  /* Initially hidden */
+}
+
+#popup-form-container.active {
+  display: block;
+  /* Shown when active */
+}
+
+/* --- End of Custom CSS --- */

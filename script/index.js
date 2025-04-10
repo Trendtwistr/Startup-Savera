@@ -115,7 +115,7 @@ function setActiveNavbar() {
 document.addEventListener("DOMContentLoaded", function () {
   loadNavbar();
   loadConsultationForm();
-  setActiveNavbar();
+  // setActiveNavbar();
 });
 
 // Initialize AOS
@@ -124,4 +124,94 @@ AOS.init({
   once: true,
   offset: 100,
   easing: "ease-in-out",
+});
+
+// Add the new functionality
+$(document).ready(function () {
+  const serviceCategory = $("#select-1");
+  const secondaryDropdowns = {
+    one: $("#prarambh-services"),
+    two: $("#suraksha-services"),
+    three: $("#satyapit-services"),
+    four: $("#sampatti-services"),
+    five: $("#unnati-services"),
+    six: $("#prasar-services"),
+  };
+
+  function updateServiceDropdowns(selectedCategoryValue) {
+    // Hide all dropdowns
+    $.each(secondaryDropdowns, function (key, dropdown) {
+      dropdown.hide();
+    });
+
+    // Show the selected dropdown
+    if (selectedCategoryValue && secondaryDropdowns[selectedCategoryValue]) {
+      secondaryDropdowns[selectedCategoryValue].show();
+    }
+  }
+
+  serviceCategory.on("change", function () {
+    updateServiceDropdowns(this.value);
+  });
+
+  // Initialize dropdown visibility
+  updateServiceDropdowns(serviceCategory.val());
+
+  // --- Magnific Popup Logic ---
+  setTimeout(function () {
+    // Check if popup is already open (good practice)
+    if (!$.magnificPopup.instance.isOpen) {
+      $.magnificPopup.open({
+        items: {
+          src: "#popup-form-container",
+          type: "inline",
+        },
+        // Basic Magnific Popup options
+        showCloseBtn: true, // Use Magnific Popup's button, styled by our CSS
+        closeOnContentClick: false,
+        closeOnBgClick: true, // Allow closing by clicking overlay
+        enableEscapeKey: true,
+
+        callbacks: {
+          close: function () {
+            console.log("Popup closed.");
+          },
+        },
+      });
+    }
+  }, 5000); // 5 seconds delay
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const reachServiceCategory = document.getElementById("select-reach");
+  const reachSecondaryDropdowns = {
+    one: document.getElementById("prarambh-services-reach"),
+    two: document.getElementById("suraksha-services-reach"),
+    three: document.getElementById("satyapit-services-reach"),
+    four: document.getElementById("sampatti-services-reach"),
+    five: document.getElementById("unnati-services-reach"),
+    six: document.getElementById("prasar-services-reach"),
+  };
+
+  function updateReachServiceDropdowns(selectedCategoryValue) {
+    // Hide all dropdowns
+    Object.values(reachSecondaryDropdowns).forEach((dropdown) => {
+      if (dropdown) dropdown.style.display = "none";
+    });
+
+    // Show the selected dropdown
+    if (
+      selectedCategoryValue &&
+      reachSecondaryDropdowns[selectedCategoryValue]
+    ) {
+      reachSecondaryDropdowns[selectedCategoryValue].style.display = "block";
+    }
+  }
+
+  reachServiceCategory.addEventListener("change", function () {
+    updateReachServiceDropdowns(this.value);
+  });
+
+  // Initialize dropdown visibility
+  updateReachServiceDropdowns(reachServiceCategory.value);
 });

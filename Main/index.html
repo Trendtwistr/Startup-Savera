@@ -728,96 +728,8 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-
   <script>
-    $(document).ready(function () {
-      const serviceCategory = $('#select-1');
-      const secondaryDropdowns = {
-        one: $('#prarambh-services'),
-        two: $('#suraksha-services'),
-        three: $('#satyapit-services'),
-        four: $('#sampatti-services'),
-        five: $('#unnati-services'),
-        six: $('#prasar-services')
-      };
 
-      function updateServiceDropdowns(selectedCategoryValue) {
-        // Hide all dropdowns
-        $.each(secondaryDropdowns, function (key, dropdown) {
-          dropdown.hide();
-        });
-
-        // Show the selected dropdown
-        if (selectedCategoryValue && secondaryDropdowns[selectedCategoryValue]) {
-          secondaryDropdowns[selectedCategoryValue].show();
-        }
-      }
-
-      serviceCategory.on('change', function () {
-        updateServiceDropdowns(this.value);
-      });
-
-      // Initialize dropdown visibility
-      updateServiceDropdowns(serviceCategory.val());
-
-      // --- Magnific Popup Logic ---
-      setTimeout(function () {
-        // Check if popup is already open (good practice)
-        if (!$.magnificPopup.instance.isOpen) {
-          $.magnificPopup.open({
-            items: {
-              src: '#popup-form-container',
-              type: 'inline'
-            },
-            // Basic Magnific Popup options
-            showCloseBtn: true, // Use Magnific Popup's button, styled by our CSS
-            closeOnContentClick: false,
-            closeOnBgClick: true, // Allow closing by clicking overlay
-            enableEscapeKey: true,
-
-            callbacks: {
-              close: function () {
-                console.log('Popup closed.');
-              }
-            }
-          });
-        }
-      }, 1000); // 15 seconds delay
-    });
-
-    document.addEventListener("DOMContentLoaded", function () {
-      const reachServiceCategory = document.getElementById("select-reach");
-      const reachSecondaryDropdowns = {
-        one: document.getElementById("prarambh-services-reach"),
-        two: document.getElementById("suraksha-services-reach"),
-        three: document.getElementById("satyapit-services-reach"),
-        four: document.getElementById("sampatti-services-reach"),
-        five: document.getElementById("unnati-services-reach"),
-        six: document.getElementById("prasar-services-reach"),
-      };
-
-      function updateReachServiceDropdowns(selectedCategoryValue) {
-        // Hide all dropdowns
-        Object.values(reachSecondaryDropdowns).forEach((dropdown) => {
-          if (dropdown) dropdown.style.display = "none";
-        });
-
-        // Show the selected dropdown
-        if (selectedCategoryValue && reachSecondaryDropdowns[selectedCategoryValue]) {
-          reachSecondaryDropdowns[selectedCategoryValue].style.display = "block";
-        }
-      }
-
-      reachServiceCategory.addEventListener("change", function () {
-        updateReachServiceDropdowns(this.value);
-      });
-
-      // Initialize dropdown visibility
-      updateReachServiceDropdowns(reachServiceCategory.value);
-    });
   </script>
 
   <!-- WhatsApp Chat Button -->
@@ -830,12 +742,12 @@
   </div>
 
   <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
     crossorigin="anonymous"></script>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
+    integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+"
+    crossorigin="anonymous"></script>
 
   <!-- AOS JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
