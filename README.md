@@ -5,12 +5,15 @@ This is a clone of the Bharat Edge website (https://bharat-edge.com/). The websi
 ## Project Structure
 
 ```
-├── index.html          # Main HTML file
-├── style.css          # Custom CSS styles
-├── img/               # Images directory
-│   ├── BharatEdge-New-Logo-Black.png
-│   └── hero-image.png (needs to be added)
-└── README.md          # This file
+├── Main/
+│   ├── index.html          # Main HTML file
+│   ├── style.css           # Custom CSS styles
+│   ├── img/                # Images directory
+│   │   |
+│   │   └── hero-image.png  # Hero image (to be added)
+│   ├── script/
+│   │   └── index.js        # JavaScript functionality
+│   └── README.md           # Project documentation
 ```
 
 ## Required Images
@@ -55,6 +58,7 @@ You can customize the website by:
 ## Browser Support
 
 The website is compatible with all modern browsers:
+
 - Chrome (latest)
 - Firefox (latest)
 - Safari (latest)
