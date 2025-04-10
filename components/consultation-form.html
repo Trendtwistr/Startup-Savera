@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Remix Icon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- logo design Icon for website -->
+  <link rel="shortcut icon" href="./img/icon/favicon.svg" type="image/x-icon">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../CSS/style.css" />
+
+</head>
+
+<body>
+  <div class="consultation-form-card">
+    <form id="contactForm" method="post" class="consultation-form">
+      <h4 class="mb-2 text-center">Get a Free Consultation</h4>
+      <div class="mb-3">
+        <input type="text" class="form-control" id="name-1" name="name-1" placeholder="Enter Your Full Name" required>
+      </div>
+      <div class="mb-3">
+        <input type="tel" class="form-control" id="phone-1" name="phone-1" placeholder="Enter 10-digit Mobile Number"
+          maxlength="10" required pattern="[0-9]{10}">
+      </div>
+      <div class="mb-3">
+        <input type="email" class="form-control" id="email-1" name="email-1" placeholder="Enter Your Email (Optional)">
+      </div>
+      <div class="mb-3">
+        <select class="form-select" id="select-1" name="select-1" required>
+          <option value="" selected disabled>Select Service Category...</option>
+          <option value="one">Prarambh - Start your Business</option>
+          <option value="two">Suraksha - Protect your business</option>
+          <option value="three">Satyapit - Get certified</option>
+          <option value="four">Sampatti - Fund your Business</option>
+          <option value="five">Unnati - Grow your business</option>
+          <option value="six">Prasar - Power Up Your Business</option>
+        </select>
+      </div>
+
+      <div class="mb-3" id="prarambh-services" style="display:none;">
+        <select class="form-select" id="select-2" name="select-2">
+          <option value="" selected disabled>Select Your Service...</option>
+          <option value="Private Limited Company">Private Limited Company</option>
+          <option value="Public Limited Company">Public Limited Company</option>
+          <option value="Limited Liability Partnership">Limited Liability Partnership</option>
+          <option value="Partnership Firm Registration (ROF)">Partnership Firm Registration (ROF)</option>
+          <option value="Section 8 Company">Section 8 Company</option>
+          <option value="12A and 80G Registration">12A and 80G Registration</option>
+          <option value="Non Profit Company Registration">Non Profit Company Registration</option>
+          <option value="Nidhi Company Registration">Nidhi Company Registration</option>
+        </select>
+      </div>
+
+      <div class="mb-3" id="suraksha-services" style="display:none;">
+        <select class="form-select" id="select-3" name="select-3">
+          <option value="" selected disabled>Select Your Service...</option>
+          <option value="NGO Darpan Registration">NGO Darpan Registration</option>
+          <option value="Trademark Registration">Trademark Registration</option>
+          <option value="Shram Suvidha Registration">Shram Suvidha Registration</option>
+          <option value="Organic Registration">Organic Registration</option>
+          <option value="ISI Registration">ISI Registration</option>
+          <option value="BIS Registration">BIS Registration</option>
+          <option value="BEE Registration">BEE Registration</option>
+          <option value="APEDA Registration">APEDA Registration</option>
+          <option value="RERA Registration">RERA Registration</option>
+          <option value="Patent Registration">Patent Registration</option>
+          <option value="Copyright Registration">Copyright Registration</option>
+        </select>
+      </div>
+
+      <div class="mb-3" id="satyapit-services" style="display:none;">
+        <select class="form-select" id="select-4" name="select-4">
+          <option value="" selected disabled>Select Your Service...</option>
+          <option value="Tax Exemption Certificate">Tax Exemption Certificate</option>
+          <option value="GeM Certificate">GeM Certificate</option>
+          <option value="ZED Certificate">ZED Certificate</option>
+          <option value="ISO Certificate">ISO Certificate</option>
+          <option value="GST Registration &amp; Certificate">GST Registration &amp; Certificate</option>
+          <option value="FSSAI Certificate">FSSAI Certificate</option>
+          <option value="IEC Certificate">IEC Certificate</option>
+          <option value="CE Certificate">CE Certificate</option>
+          <option value="BIS Certificate">BIS Certificate</option>
+          <option value="Gumasta Certificate">Gumasta Certificate</option>
+          <option value="BIFMA Certification">BIFMA Certification</option>
+          <option value="NSIC">NSIC</option>
+          <option value="APEDA Certificate">APEDA Certificate</option>
+          <option value="Organic Certification">Organic Certification</option>
+          <option value="Halal Certification">Halal Certification</option>
+          <option value="FEMA Certification">FEMA Certification</option>
+          <option value="BIS Certification For Toys">BIS Certification For Toys</option>
+          <option value="ROHS Compliance Certificate">ROHS Compliance Certificate</option>
+          <option value="Udyog Aadhar">Udyog Aadhar</option>
+          <option value="START-UP India Certificate">START-UP India Certificate</option>
+        </select>
+      </div>
+
+      <div class="mb-3" id="sampatti-services" style="display:none;">
+        <select class="form-select" id="select-5" name="select-5">
+          <option value="" selected disabled>Select Your Service...</option>
+          <option value="Government Grants And Funding">Government Grants And Funding</option>
+          <option value="CGTMSE">CGTMSE</option>
+          <option value="Venture Capital">Venture Capital</option>
+          <option value="Seed Money">Seed Money</option>
+        </select>
+      </div>
+
+      <div class="mb-3" id="unnati-services" style="display:none;">
+        <select class="form-select" id="select-6" name="select-6">
+          <option value="" selected disabled>Select Your Service...</option>
+          <option value="Project Financing">Project Financing</option>
+          <option value="Machinery Loan">Machinery Loan</option>
+          <option value="Green Field Loan">Green Field Loan</option>
+          <option value="Working Capital">Working Capital</option>
+          <option value="Business Loan">Business Loan</option>
+          <option value="Line Of Credit">Line Of Credit</option>
+          <option value="MSME Loan">MSME Loan</option>
+          <option value="PMEGP Loan">PMEGP Loan</option>
+          <option value="MUDRA Loan">MUDRA Loan</option>
+        </select>
+      </div>
+
+      <div class="mb-3" id="prasar-services">
+        <select class="form-select" id="select-7" name="select-7">
+          <option value="" selected disabled>Select Your Service...</option>
+          <option value="Logo Design">Logo Design</option>
+          <option value="Digital Marketing">Digital Marketing</option>
+          <option value="Website Development">Website Development</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-main w-100">Send Message</button>
+    </form>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Initialize AOS -->
+  <script src="script/index.js"></script>
+</body>
+
+</html>
