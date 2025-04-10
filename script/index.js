@@ -43,7 +43,13 @@ function index() {
 
 index();
 function loadNavbar() {
-  fetch("/components/navbar.html")
+  const navbarElement = document.getElementById("navbar");
+  if (!navbarElement) {
+    console.error("Navbar element not found in the DOM.");
+    return;
+  }
+
+  fetch("../components/navbar.html")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Network response was not ok " + response.statusText);
@@ -51,7 +57,7 @@ function loadNavbar() {
       return response.text();
     })
     .then((data) => {
-      document.getElementById("navbar").innerHTML = data;
+      navbarElement.innerHTML = data;
     })
     .catch((error) => {
       console.error("There was a problem with the fetch operation:", error);
@@ -59,6 +65,13 @@ function loadNavbar() {
 }
 
 function loadConsultationForm() {
+  const consultationFormElement = document.getElementById("consultation-form");
+  if (!consultationFormElement) {
+    const consultationFormElement =
+      document.getElementById("consultation-form");
+    return;
+  }
+
   fetch("/components/consultation-form.html")
     .then((response) => {
       if (!response.ok) {
@@ -67,7 +80,7 @@ function loadConsultationForm() {
       return response.text();
     })
     .then((data) => {
-      document.getElementById("consultation-form").innerHTML = data;
+      consultationFormElement.innerHTML = data;
     })
     .catch((error) => {
       console.error("There was a problem with the fetch operation:", error);
