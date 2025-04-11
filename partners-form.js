@@ -1,6 +1,6 @@
-function sendEmail(params) {
+function sendEmails(params) {
   const serviceId = "service_startup";
-  const templateId = "template_startup";
+  const templateId = "template_s1xjrns";
   const publicKey = "IaD3sEcN4PYULKejM";
 
   emailjs.init(publicKey);
