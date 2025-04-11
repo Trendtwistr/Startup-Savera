@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Startup Savera - Business Solutions</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Remix Icon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- logo design Icon for website -->
+  <link rel="shortcut icon" href="./img/icon/favicon.svg" type="image/x-icon">
+
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    .service-card {
+      background: white;
+      border-radius: 20px;
+      padding: 30px;
+      text-align: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .service-card img {
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+      margin-bottom: 20px;
+    }
+
+    .service-card .card-body {
+      text-align: center;
+      padding: 0;
+    }
+
+    .service-card .card-title {
+      color: #333;
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .service-card .btn-main {
+      background: #003399;
+      color: white;
+      padding: 12px 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: inline-block;
+      font-weight: 500;
+      margin-top: auto;
+    }
+
+    .service-card .btn-main:hover {
+      background: #002266;
+      transform: translateY(-2px);
+    }
+
+    .service-tabs {
+      background: #f8f9fa;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 30px 0;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .service-tab {
+      padding: 12px 15px;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #6c757d;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      margin: 5px;
+      text-align: center;
+      background: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .service-tab:hover {
+      background: #e9ecef;
+      color: #495057;
+    }
+
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+      color: #343a40;
+    }
+
+    .section-subtitle {
+      font-size: 1.2rem;
+      color: #6c757d;
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="img/Startup_savera_logo.svg" alt="Startup Savera Company Logo" width="180" style="padding: 0" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link active dropdown-toggle" href="services.html" id="navbarDropdownMenuLink" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+              onclick="window.location.href='Services.html'">Services</a>
+            <div class="dropdown-menu megamenu">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-2">
+                    <h6>Prarambh</h6>
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="private-limited-company.html">Private Limited Company</a>
+                      </li>
+                      <li>
+                        <a href="one_person_company_registration.html">One Person Company Registration</a>
+                      </li>
+                      <li>
+                        <a href="llp-company-registration.html">Limited Liability Partnership</a>
+                      </li>
+                      <li>
+                        <a href="services">Partnership Firm Registration (ROF)</a>
+                      </li>
+                      <li><a href="section-8-company-registration.html">Section 8 Company</a></li>
+                      <li><a href="12a-and-80g-registration.html">12A and 80G Registration</a></li>
+                      <li><a href="nidhi-company-registration.html">Nidhi Company Registration</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2">
+                    <h6>Suraksha</h6>
+                    <ul class="list-unstyled">
+                      <li><a href="shram-suvidha-registration.html">Shram Suvidha Registration</a></li>
+                      <li><a href="trademark-registration.html">Trademark Registration</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2">
+                    <h6>Satyapit</h6>
+                    <ul class="list-unstyled">
+                      <li><a href="startup-india-certification.html">START-UP India Certificate</a></li>
+                      <li><a href="gem-registration.html">GeM Certificate</a></li>
+                      <li><a href="tax-exemption-certification.html">Tax Exemption Certificate</a></li>
+                      <li><a href="zed-certification.html">ZED Certificate</a></li>
+                      <li><a href="iso-certification.html">ISO Certificate</a></li>
+                      <li><a href="gst-registration.html">GST Registration & Certificate</a></li>
+                      <li><a href="fssai-registration.html">FSSAI Certificate</a></li>
+                      <li><a href="iec-registration.html">IEC Certificate</a></li>
+                      <li><a href="nsic-registration.html">NSIC Certification</a></li>
+                      <li><a href="udyog-aadhar-registration.html">Udyog Aadhar (MSME)</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2">
+                    <h6>Sampatti</h6>
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="seed-fund.html">Seed Fund</a>
+                      </li>
+                      <li><a href="rkvy-raftaar.html">RKVY- RAFTAAR</a></li>
+                      <li><a href="naiff.html">NAIFF</a></li>
+                      <li><a href="msme-design.html">MSME Design</a></li>
+                      <li><a href="#">Grant for Textile</a></li>
+                      <li><a href="seed-fund.html">SEED SUPPORT SCHEME (SSS)</a></li>
+                      <li><a href="#">Sampatti Prayas Fund</a></li>
+                      <li><a href="#">Grant for Textile</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2">
+                    <h6>Unnati</h6>
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="venture-capital.html">Venture Capital</a>
+                      </li>
+                      <li>
+                        <a href="cgtmse-loan.html">Working Capital (CGTMSE Loan)</a>
+                      </li>
+                      <li>
+                        <a href="mudra-loan.html">MSME LOAN</a>
+                      </li>
+                      <li><a href="pmegp-loan.html">PMEGP LOAN</a></li>
+                      <li><a href="mudra-loan.html">MUDRA LOAN</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2">
+                    <h6>Prasar</h6>
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="logo-design.html">Logo Design</a>
+                      </li>
+                      <li>
+                        <a href="digital-marketing.html">Digital Marketing</a>
+                      </li>
+                      <li>
+                        <a href="website-development.html">Website Development</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="partners.html">Partners</a>
+          </li>
+          <li class="dropdown">
+            <a class="nav-link dropdown-toggle dropbtn" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Featured</a>
+            <ul class="list-unstyled dropdown-content">
+              <li><a href="#">Life@Startup-Savera</a></li>
+              <li><a href="career.html">Career</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms & Conditions</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <a href="tel:+916358054005" class="helpline d-none d-lg-block">
+        <span>Contact Number</span> <br />+91 9351262184
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section text-center text-lg-start py-5" data-aos="fade-up">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h1 class="hero-title">Our Services</h1>
+          <p class="hero-subtitle">
+            Comprehensive suite of professional services
+          </p>
+          <a href="#Reach" class="btn btn-main">Book Appointment</a>
+        </div>
+        <div class="col-lg-6 py-4">
+          <img src="../img/Main/services.svg" alt="Business Growth" fetchpriority="high" class="img-fluid rounded shadow" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Category Tabs -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row justify-content-center text-center g-3">
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="service-tab active py-3 px-2 rounded shadow-sm" data-target="prarambh">
+            Prarambh
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="service-tab py-3 px-2 rounded shadow-sm" data-target="suraksha">
+            Suraksha
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="service-tab py-3 px-2 rounded shadow-sm" data-target="satyapit">
+            Satyapit
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="service-tab py-3 px-2 rounded shadow-sm" data-target="sampatti">
+            Sampatti
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="service-tab py-3 px-2 rounded shadow-sm" data-target="unnati">
+            Unnati
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="service-tab py-3 px-2 rounded shadow-sm" data-target="prasar">
+            Prasar
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Service Sections -->
+  <section id="prarambh" class="py-5 service-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Prarambh - Start your business</h2>
+      </div>
+      <div class="row g-4">
+        <!-- Private Limited Company -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="../img/Main/private_limited_company_registration.svg" 
+              alt="Private Limited Company Registration" fetchpriority="high" />
+            <div class="card-body">
+              <h5 class="card-title">Private Limited Company Registration</h5>
+              <a href="private-limited-company.html" class="btn btn-main">Know More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- One Person Company -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="../img/Main/one_person_company_registration.svg" alt="One Person Company Registration" fetchpriority="high" />
+            <div class="card-body">
+              <h5 class="card-title">One Person Company Registration</h5>
+              <a href="one_person_company_registration.html" class="btn btn-main">Know More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Limited Liability Partnership -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="../img/Main/limited_liability_partnership.svg" alt="Limited Liability Partnership" fetchpriority="high" />
+            <div class="card-body">
+              <h5 class="card-title">Limited Liability Partnership</h5>
+              <a href="llp-company-registration.html" class="btn btn-main">Know More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Partnership Firm Registration -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="../img/Main/partnership_firm_registration.svg" alt="Partnership Firm Registration" fetchpriority="high" />
+            <div class="card-body">
+              <h5 class="card-title">Partnership Firm Registration (ROF)</h5>
+              <a href="partnership-firm-registration.html" class="btn btn-main">Know More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 8 Company -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="../img/Main/section_8_company.svg" alt="Section 8 Company" fetchpriority="high" />
+            <div class="card-body">
+              <h5 class="card-title">Section 8 Company</h5>
+              <a href="section-8-company-registration.html" class="btn btn-main">Know More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12A and 80G Registration -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="../img/Main/12a_and_80g_registration.svg" alt="12A and 80G Registration" fetchpriority="high" />
+            <div class="card-body">
+              <h5 class="card-title">12A and 80G Registration</h5>
+              <a href="12a-and-80g-registration.html" class="btn btn-main">Know More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nidhi Company Registration -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="../img/Main/nidhi_company_registration.svg" alt="12A and 80G Registration" fetchpriority="high" />
+            <div class="card-body">
+              <h5 class="card-title">Nidhi Company Registration</h5>
+              <a href="nidhi-company-registration.html" class="btn btn-main">Know More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Suraksha Section -->
+  <section id="suraksha" class="py-5 service-section d-none">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Suraksha - Protect your business</h2>
+      </div>
+      <div class="row g-4">
+        <!-- Shram Suvidha Registration -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="../img/Main/shram_suvidha_registration.svg" alt="Shram Suvidha Registration" fetchpriority="high" />
+            <div class="card-body">
+              <h5 class="card-title">Shram Suvidha Registration</h5>
+              <a href="shram-suvidha-registration.html" class="btn btn-main">Know More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trademark Registration -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="../img/Main/trademark_registration.svg" alt="Trademark Registration" fetchpriority="high" />
+            <div class="card-body">
+              <h5 class="card-title">Trademark Registration</h5>
+              <a href="trademark-registration.html" class="btn btn-main">Know More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Satyapit Section -->
+  <section id="satyapit" class="py-5 service-section d-none">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Suraksha - Protect your business</h2>
+      </div>
+      <div class="row g-4">
+        <!-- START-UP India Certificate -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="../img/Main/startup_india_certificate_registration.svg" alt="START-UP India Certificate"
+            fetchpriority="high" class="img-fluid">
+            <div class="card-body">
+              <h5 class="card-title">Shram Suvidha Registration</h5>
+              <a href="startup-india-certification.html" class="btn btn-main">Know More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- GeM Certificate -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="../img/Main/gem_registration.svg" alt="GeM Certificate" fetchpriority="high" />
+            <div class="card-body">
+              <h5 class="card-title">GeM Certificate</h5>
+              <a href="gem-registration.html" class="btn btn-main">Know More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tax Exemption Certificate -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="../img/Main/tax_exemption_certification.svg" alt="Tax Exemption Certificate" fetchpriority="high" />
+            <div class="card-body">
+              <h5 class="card-title">Tax Exemption Certificate</h5>
+              <a href="tax-exemption-certification.html" class="btn btn-main">Know More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ZED Certificate -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="../img/Main/zed_certification.svg" alt="ZED Certificate" fetchpriority="high" />
+            <div class="card-body">
+              <h5 class="card-title">ZED Certificate</h5>
+              <a href="zed-certification.html" class="btn btn-main">Know More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ISO Certificate -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="../img/Main/iso_certification.svg" alt="ISO Certificate" fetchpriority="high" />
+            <div class="card-body">
+              <h5 class="card-title">ISO Certificate</h5>
+              <a href="iso-certification.html" class="btn btn-main">Know More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- GST Registration & Certificate -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="../img/Main/gst_certificate_&_registration.svg" alt="GST Registration & Certificate" fetchpriority="high" />
+            <div class="card-body">
+              <h5 class="card-title">GST Registration & Certificate</h5>
+              <a href="trademark-registration.html" class="btn btn-main">Know More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- FSSAI Certificate -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="../img/Main/trademark_registration.svg" alt="FSSAI Certificate" fetchpriority="high" />
+            <div class="card-body">
+              <h5 class="card-title">FSSAI Certificate</h5>
+              <a href="trademark-registration.html" class="btn btn-main">Know More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- IEC Certificate -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="../img/Main/iec_certification.svg" alt="IEC Certificate" fetchpriority="high" />
+            <div class="card-body">
+              <h5 class="card-title">IEC Certificate</h5>
+              <a href="iec-registration.html" class="btn btn-main">Know More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- NSIC Certification -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="../img/Main/nsic_certification.svg" alt="NSIC Certification" fetchpriority="high" />
+            <div class="card-body">
+              <h5 class="card-title">NSIC Certification</h5>
+              <a href="nsic-registration.html" class="btn btn-main">Know More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Udyog Aadhar (MSME) -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="../img/Main/udyog_aadhaar_registration.svg" alt="Udyog Aadhar (MSME)" fetchpriority="high" />
+            <div class="card-body">
+              <h5 class="card-title">Udyog Aadhar (MSME)</h5>
+              <a href="udyog-aadhar-registration.html" class="btn btn-main">Know More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Sampatti Section -->
+  <section id="sampatti" class="py-5 service-section d-none">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Sampatti - Protect your business</h2>
+      </div>
+      <div class="row g-4">
+
+        <!-- Seed Fund Suvidha Registration -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="../img/Main/seed_fund.svg" alt="Seed Fund" fetchpriority="high" />
+            <div class="card-body">
+              <h5 class="card-title">Seed Fund</h5>
+              <a href="seed-fund.html" class="btn btn-main">Know More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- RKVY- RAFTAAR -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="../img/Main/rkvy_raftaar.svg" alt="RKVY- RAFTAAR" fetchpriority="high" />
+            <div class="card-body">
+              <h5 class="card-title">RKVY- RAFTAAR</h5>
+              <a href="rkvy-raftaar.html" class="btn btn-main">Know More</a>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- NAIFF -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="../img/Main/naiff_loan.svg" alt="NAIFF" fetchpriority="high" />
+            <div class="card-body">
+              <h5 class="card-title">NAIFF</h5>
+              <a href="naiff.html" class="btn btn-main">Know More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- MSME Design -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="../img/Main/msme_design.svg" alt="MSME Design" fetchpriority="high" />
+            <div class="card-body">
+              <h5 class="card-title">MSME Design</h5>
+              <a href="msme-design.html" class="btn btn-main">Know More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+    </div>
+  </section>
+
+  <!-- Unnati Section -->
+  <section id="unnati" class="py-5 service-section d-none">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Unnati - Protect your business</h2>
+      </div>
+      <div class="row g-4">
+
+        <!-- Venture Capital -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="../img/Main/venture_capital.svg" alt="Venture Capital" fetchpriority="high" />
+            <div class="card-body">
+              <h5 class="card-title">Venture Capital</h5>
+              <a href="venture-capital.html" class="btn btn-main">Know More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Working Capital (CGTMSE Loan) -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="../img/Main/cgtmse.svg" alt="Working Capital (CGTMSE Loan)" fetchpriority="high" />
+            <div class="card-body">
+              <h5 class="card-title">RKVY- RAFTAAR</h5>
+              <a href="cgtmse-loan.html" class="btn btn-main">Know More</a>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- MSME LOAN -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="#" alt="MSME LOAN" />
+            <div class="card-body">
+              <h5 class="card-title">MSME LOAN</h5>
+              <a href="#" class="btn btn-main">Know More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PMEGP LOAN -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="../img/Main/msme_design.svg" alt="MSME Design" fetchpriority="high" />
+            <div class="card-body">
+              <h5 class="card-title">PMEGP LOAN</h5>
+              <a href="pmegp-loan.html" class="btn btn-main">Know More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- MUDRA LOAN -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="../img/Main/mundra_loan.svg" alt="MUDRA LOAN" fetchpriority="high" />
+            <div class="card-body">
+              <h5 class="card-title">MUDRA LOAN</h5>
+              <a href="mudra-loan.html" class="btn btn-main">Know More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    </div>
+    </div>
+  </section>
+
+
+  <!-- Prasar Section -->
+  <section id="prasar" class="py-5 service-section d-none">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">Prasar - Protect your business</h2>
+      </div>
+      <div class="row g-4">
+        <!-- Logo Design -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="../img/Main/logo_design.svg" alt="Logo Design" fetchpriority="high" />
+            <div class="card-body">
+              <h5 class="card-title">Logo Design</h5>
+              <a href="logo-design.html" class="btn btn-main">Know More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Digital Marketing -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="../img/Main/digital_marketing.svg" alt="Digital Marketing" fetchpriority="high" />
+            <div class="card-body">
+              <h5 class="card-title">Digital Marketing</h5>
+              <a href="digital-marketing.html" class="btn btn-main">Know More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Website Development -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="../img/Main/website_development.svg" alt="Website Development" fetchpriority="high" />
+            <div class="card-body">
+              <h5 class="card-title">Website Development</h5>
+              <a href="website-development.html" class="btn btn-main">Know More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-white">
+    <div class="container py-4">
+      <div class="row g-4">
+        <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
+          <img src="img/logo-ss.svg" alt=" Startup Savera Logo" width="220" class="img-fluid mb-2" />
+          <p class="mb-0">
+            SAVERA TURNS DREAMS INTO REALITY
+          </p>
+        </div>
+        <div class="col-6 col-sm-6 col-lg-3 mb-4 mb-lg-0">
+          <h5 class="mb-3">Quick Links</h5>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2">
+              <a href="index.html" class="text-white">Home</a>
+            </li>
+            <li class="mb-2">
+              <a href="about.html" class="text-white">About Us</a>
+            </li>
+            <li class="mb-2">
+              <a href="services.html" class="text-white">Services</a>
+            </li>
+            <li class="mb-2">
+              <a href="partners.html" class="text-white">Partners</a>
+            </li>
+            <li><a href="contact.html" class="text-white">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-sm-6 col-lg-3 mb-4 mb-lg-0">
+          <h5 class="mb-3">Our Services</h5>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2">
+              <a href="#" class="text-white">Prarambh</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" target="Suraksha" class="text-white">Suraksha</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="text-white">Satyapit</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="text-white">Sampatti</a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="text-white">Unnati</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <h5 class="mb-3">Connect With Us</h5>
+          <div class="social-links mb-3">
+            <a href="https://www.facebook.com/people/Startup-Savera/61574920799218/" class="text-white me-3"><i
+                class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/startupsavera" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/startup-savera-services/" class="text-white me-3"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/startupsavera_/?utm_source=ig_web_button_share_sheet" class="text-white"
+              target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+          <p class="mb-1">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+91 93512 62184"> +91 93512 62184 </a>
+          </p>
+          <p class="mb-0">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:support@startupsavera.com" target="_blank">support@startupsavera.com</a>
+          </p>
+        </div>
+      </div>
+      <hr class="my-3" />
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+          <p class="mb-0 text-center text-lg-start">
+            &copy; <a href="#">Startup Savera</a> All Rights Reserved.
+            Designed by
+            <a href="http://www.trendtwistr.com" target="_blank" rel="noopener noreferrer">Trendtwistr</a>
+          </p>
+        </div>
+        <div class="col-12 col-lg-6 text-center text-lg-end">
+          <a href="terms.html" class="text-white me-3">Terms & Conditions</a>
+          <a href="privacy.html" class="text-white">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Chat Button -->
+<div class="position-fixed bottom-0 end-0 mb-4 me-4 z-1030">
+  <a 
+    href="https://wa.me/9351262184" 
+    class="btn btn-success p-3 border-0 rounded-circle shadow"
+    style="background-color: #25d366;" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    aria-label="Chat with us on WhatsApp">
+    <i class="fab fa-whatsapp fa-2x" aria-hidden="true"></i>
+  </a>
+</div>
+
+
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    // Initialize AOS
+    AOS.init();
+
+    // Service tab functionality
+    document.addEventListener("DOMContentLoaded", function () {
+      // Get all tabs and sections
+      const tabs = document.querySelectorAll(".service-tab");
+      const sections = document.querySelectorAll(".service-section");
+      const footerLinks = document.querySelectorAll(".service-link");
+
+      // Function to switch tabs
+      function switchTab(targetId) {
+        // Update active state of tabs
+        tabs.forEach((tab) => {
+          if (tab.getAttribute("data-target") === targetId) {
+            tab.classList.add("active");
+          } else {
+            tab.classList.remove("active");
+          }
+        });
+
+        // Show/hide sections
+        sections.forEach((section) => {
+          if (section.id === targetId) {
+            section.classList.remove("d-none");
+          } else {
+            section.classList.add("d-none");
+          }
+        });
+
+        // Scroll to section
+        const section = document.getElementById(targetId);
+        if (section) {
+          window.scrollTo({
+            top: section.offsetTop - 100,
+            behavior: "smooth",
+          });
+        }
+      }
+
+      // Add click event to tabs
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", function () {
+          const targetId = this.getAttribute("data-target");
+          switchTab(targetId);
+        });
+      });
+
+      // Add click event to footer links
+      footerLinks.forEach((link) => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("data-target");
+          switchTab(targetId);
+        });
+      });
+
+      // Show first section by default
+      if (tabs.length > 0) {
+        const firstTab = tabs[0];
+        const firstTarget = firstTab.getAttribute("data-target");
+        switchTab(firstTarget);
+      }
+    });
+  </script>
+</body>
+
+</html>
