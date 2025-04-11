@@ -5,7 +5,7 @@ function index() {
       if (element) {
         setTimeout(() => {
           element.scrollIntoView({ behavior: "smooth", block: "start" });
-        }, 1000); // Delay to ensure scrolling works correctly
+        }, 100); // Delay to ensure scrolling works correctly
       }
     }
   });
@@ -42,27 +42,6 @@ function index() {
 }
 
 index();
-function loadNavbar() {
-  const navbarElement = document.getElementById("navbar");
-  if (!navbarElement) {
-    console.error("Navbar element not found in the DOM.");
-    return;
-  }
-
-  fetch("../components/navbar.html")
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Network response was not ok " + response.statusText);
-      }
-      return response.text();
-    })
-    .then((data) => {
-      navbarElement.innerHTML = data;
-    })
-    .catch((error) => {
-      console.error("There was a problem with the fetch operation:", error);
-    });
-}
 
 function loadConsultationForm() {
   const consultationFormElement = document.getElementById("consultation-form");
@@ -87,35 +66,9 @@ function loadConsultationForm() {
     });
 }
 
-function setActiveNavbar() {
-  const currentPath = window.location.pathname; // Get the current page path
-  const navLinks = document.querySelectorAll(".navbar-nav .nav-link"); // Select all nav links
-
-  navLinks.forEach((link) => {
-    // Remove 'active' class from all links
-    link.classList.remove("active");
-
-    // Add 'active' class to the link that matches the current path
-    if (link.getAttribute("href") === currentPath) {
-      link.classList.add("active");
-
-      // If the link is inside a dropdown, add 'active' to the parent dropdown
-      const parentDropdown = link.closest(".dropdown");
-      if (parentDropdown) {
-        const dropdownToggle = parentDropdown.querySelector(".dropdown-toggle");
-        if (dropdownToggle) {
-          dropdownToggle.classList.add("active");
-        }
-      }
-    }
-  });
-}
-
 // Call the function after the DOM is loaded
 document.addEventListener("DOMContentLoaded", function () {
-  loadNavbar();
   loadConsultationForm();
-  // setActiveNavbar();
 });
 
 // Initialize AOS
@@ -179,7 +132,7 @@ $(document).ready(function () {
         },
       });
     }
-  }, 5000); // 5 seconds delay
+  }, 15000); // 5 seconds delay
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -214,4 +167,59 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Initialize dropdown visibility
   updateReachServiceDropdowns(reachServiceCategory.value);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const consultationForm = document.getElementById("consultationForm");
+  if (consultationForm) {
+    consultationForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const serviceCategory = document.getElementById("select-1").value;
+      const selectedService = document.querySelector(
+        `#${serviceCategory.toLowerCase()}-services select`
+      ).value;
+
+      const formData = {
+        name: document.getElementById("name-1").value,
+        phone: document.getElementById("phone-1").value,
+        email: document.getElementById("email-1").value,
+        serviceCategory,
+        selectedService,
+      };
+
+      emailjs.send("service_startup", "template_s1xjrns", formData).then(
+        function (response) {
+          alert("Message sent successfully!");
+          consultationForm.reset();
+        },
+        function (error) {
+          console.error("Failed to send message:", error);
+          alert("Failed to send message. Please try again.");
+        }
+      );
+    });
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const reachUsForm = document.getElementById("reachUsForm");
+  if (reachUsForm) {
+    reachUsForm.addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      emailjs.init("IaD3sEcN4PYULKejM"); // Replace with your Email.js public key
+
+      emailjs
+        .sendForm("service_startup", "template_startup", reachUsForm)
+        .then(function (response) {
+          alert("Message sent successfully!");
+          reachUsForm.reset(); // Reset the form after successful submission
+        })
+        .catch(function (error) {
+          console.error("Failed to send message:", error);
+          alert("Failed to send message. Please try again.");
+        });
+    });
+  }
 });

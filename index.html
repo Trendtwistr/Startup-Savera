@@ -37,6 +37,8 @@
   <!-- Favicon -->
   <link rel="shortcut icon" href="../img/icon/favicon.svg" type="image/x-icon">
 
+  <!-- emailjs -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
   <!-- Your custom stylesheet (keep it last) -->
   <link rel="stylesheet" href="style.css" />
@@ -551,15 +553,15 @@
             <form id="reachUsForm" method="post" class="consultation-form">
               <h4 class="mb-2 text-center">Get a Free Consultation</h4>
               <div class="mb-3">
-                <input type="text" class="form-control" id="name-reach" name="name-reach"
-                  placeholder="Enter Your Full Name" required>
+                <input type="text" class="form-control" id="name-reach" name="name" placeholder="Enter Your Full Name"
+                  required>
               </div>
               <div class="mb-3">
-                <input type="tel" class="form-control" id="phone-reach" name="phone-reach"
-                  placeholder="Enter 10-digit Mobile Number" maxlength="10" required pattern="[0-9]{10}">
+                <input type="tel" class="form-control" id="phone-reach" name="phone"
+                  placeholder="Enter 10-digit Mobile Number" required>
               </div>
               <div class="mb-3">
-                <input type="email" class="form-control" id="email-reach" name="email-reach"
+                <input type="email" class="form-control" id="email-reach" name="email"
                   placeholder="Enter Your Email (Optional)">
               </div>
               <div class="mb-3">
@@ -893,6 +895,140 @@
 
   <!-- main js -->
   <script src="index.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const consultationForm = document.getElementById('consultationForm');
+      if (consultationForm) {
+        consultationForm.addEventListener('submit', function (event) {
+          event.preventDefault();
+
+          const name = document.getElementById('name').value;
+          const phone = document.getElementById('phone').value;
+          const email = document.getElementById('email').value;
+          const serviceCategory = document.getElementById('select-1').value;
+          let selectedService = '';
+
+          switch (serviceCategory) {
+            case 'Prarambh - Start your Business':
+              selectedService = document.getElementById('select-2').value;
+              break;
+            case 'Suraksha - Protect your business':
+              selectedService = document.getElementById('select-3').value;
+              break;
+            case 'Satyapit - Get certified':
+              selectedService = document.getElementById('select-4').value;
+              break;
+            case 'Sampatti - Fund your Business':
+              selectedService = document.getElementById('select-5').value;
+              break;
+            case 'Unnati - Grow your business':
+              selectedService = document.getElementById('select-6').value;
+              break;
+            case 'Prasar - Power Up Your Business':
+              selectedService = document.getElementById('select-7').value;
+              break;
+            default:
+              selectedService = 'Not specified';
+              break;
+          }
+
+          sendEmail({
+            to_email: 'support@startupsavera.com', // Your company's support email
+            subject: 'Free Consultation Request',
+            message: `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nService Category: ${serviceCategory}\nSelected Service: ${selectedService}`
+          });
+
+          // Optionally reset the form and hide it
+          consultationForm.reset();
+          document.getElementById('popup-form-container').classList.add('d-none');
+        });
+      }
+
+      // Add event listeners to show/hide sub-services based on the main category selection
+      const serviceCategorySelect = document.getElementById('select-1');
+      const serviceDivs = {
+        'Prarambh - Start your Business': 'prarambh-services',
+        'Suraksha - Protect your business': 'suraksha-services',
+        'Satyapit - Get certified': 'satyapit-services',
+        'Sampatti - Fund your Business': 'sampatti-services',
+        'Unnati - Grow your business': 'unnati-services',
+        'Prasar - Power Up Your Business': 'prasar-services'
+      };
+
+      serviceCategorySelect.addEventListener('change', function () {
+        // Hide all sub-service divs
+        for (const divId in serviceDivs) {
+          document.getElementById(serviceDivs[divId]).style.display = 'none';
+        }
+
+        // Show the selected sub-service div
+        const selectedCategory = this.value;
+        if (serviceDivs[selectedCategory]) {
+          document.getElementById(serviceDivs[selectedCategory]).style.display = 'block';
+        }
+      });
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Initialize Email.js
+      emailjs.init("IaD3sEcN4PYULKejM"); // Replace with your Email.js public key
+
+      // Function to handle form submission
+      function handleFormSubmission(formId) {
+        const form = document.getElementById(formId);
+        if (form) {
+          form.addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Collect form data
+            const formData = new FormData(form);
+            let message = `Name: ${formData.get('name') || formData.get('name-1')}\n`;
+            message += `Phone: ${formData.get('phone') || formData.get('phone-1')}\n`;
+            message += `Email: ${formData.get('email') || formData.get('email-1')}\n`;
+            message += `Service Category: ${formData.get('select-reach') || formData.get('select-1')}\n`;
+
+            // Add selected sub-service if applicable
+            const serviceCategory = formData.get('select-reach') || formData.get('select-1');
+            if (serviceCategory === 'one') {
+              message += `Selected Service: ${formData.get('select-reach-prarambh') || formData.get('select-2')}\n`;
+            } else if (serviceCategory === 'two') {
+              message += `Selected Service: ${formData.get('select-reach-suraksha') || formData.get('select-3')}\n`;
+            } else if (serviceCategory === 'three') {
+              message += `Selected Service: ${formData.get('select-reach-satyapit') || formData.get('select-4')}\n`;
+            } else if (serviceCategory === 'four') {
+              message += `Selected Service: ${formData.get('select-reach-sampatti') || formData.get('select-5')}\n`;
+            } else if (serviceCategory === 'five') {
+              message += `Selected Service: ${formData.get('select-reach-unnati') || formData.get('select-6')}\n`;
+            } else if (serviceCategory === 'six') {
+              message += `Selected Service: ${formData.get('select-reach-prasar') || formData.get('select-7')}\n`;
+            }
+
+            // Send email using Email.js
+            emailjs.send("service_startup", "template_startup", {
+              message: message,
+              to_email: "support@startupsavera.com", // Replace with your email
+            })
+              .then(function (response) {
+                console.log("SUCCESS!", response.status, response.text);
+                alert("Message sent successfully!");
+                form.reset();
+              })
+              .catch(function (error) {
+                console.error("FAILED...", error);
+                alert("Failed to send message. Please try again.");
+              });
+          });
+        }
+      }
+
+      // Handle both forms
+      handleFormSubmission('reachUsForm'); // Normal form
+      // handleFormSubmission('contactForm'); // Popup form
+    });
+  </script>
 
 </body>
 
