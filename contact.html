@@ -22,8 +22,8 @@
 
   <link rel="stylesheet" href="style.css" />
 
-<!-- emailjs -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <!-- emailjs -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
 </head>
 
@@ -238,9 +238,9 @@
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div c<label for="email">Email Address</label>
-                    <input type="emalass="form-group">
-                    il" class="form-control" id="email" required />
+                  <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" class="form-control" id="email" required />
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -262,7 +262,7 @@
                   </div>
                 </div>
                 <div class="col-12 text-center">
-                  <button type="submit" class="btn btn-main" onclick="sendMail()" >
+                  <button type="submit" class="btn btn-main" onclick="sendMail()">
                     Send Message
                   </button>
                 </div>
@@ -272,7 +272,7 @@
         </div>
       </div>
     </div>
-  </section>  
+  </section>
 
   <!-- FAQ Section -->
   <section class="faq-section py-5">
@@ -452,13 +452,13 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 
-    <script src="contact-form.js"></script>
+  <script src="contact-form.js"></script>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
       const emailForm = document.getElementById('emailForm');
       if (emailForm) {
-        emailForm.addEventListener('submit', function(event) {
+        emailForm.addEventListener('submit', function (event) {
           event.preventDefault();
 
           const name = document.getElementById('name').value;
@@ -479,7 +479,7 @@
         });
       }
     });
-    </script>
+  </script>
 
 </body>
 
